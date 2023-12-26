@@ -1,0 +1,136 @@
+[
+    {
+        "id": 0,
+        "cards" : 
+        [
+            {
+                "image": "public/screen/home/weatherApp.png",
+                "title": "The weather App",
+                "preview": "A weather app using OpenWeather API",
+                "deadline": "12 october 2023",
+                "tech": ["HTML, SASS, JavaScript"],
+                "git": "https://github.com/RosaBld/WeatherApp",
+                "deploy": "https://quiet-dolphin-6ecc99.netlify.app/"
+            }
+        ],
+        "infos" : 
+        [
+            {
+                "title": "The weather App",
+                "overview": "In this weather app, you can select the city from where you want the weather. It will display for you the forecast of the 5 next day (including today) with the date (including the day of the week), an cute little icon with the forecast, the min and max temperature and the weather (rain ? snow ? sun ?). You'll also be abble to select multiple cities if you need to compare their weather for the next few days. Every past research will be stored on your side and every time you'll reload the page, you'll still see your previous researches with the different forecasts still showing on your awesome webpage. To clean it, you simply have to ckicl on the magnificient button at the bottom of the page.",
+                "screens": [""],
+                "tech": ["HTML, SASS, JavaScript"],
+                "git": "https://github.com/RosaBld/WeatherApp",
+                "deploy": "https://quiet-dolphin-6ecc99.netlify.app/"
+            }
+        ]
+    },
+
+    {
+        "id": 1,
+        "cards" : 
+        [
+            {
+                "image": "public/screen/home/azstore.png",
+                "title": "AZ-Store",
+                "preview": "A shoe shop store using PHP my Admin",
+                "deadline": "27 octobre 2023",
+                "tech": ["HTML, SASS, PHP, JSON"],
+                "git": "https://github.com/antoinel74/AZ-Store",
+                "deploy": ""
+            }
+        ],
+        "infos" : 
+        [
+            {
+                "title": "AZ-Store",
+                "overview": "",
+                "screens": [""],
+                "tech": ["HTML, SASS, PHP, JSON"],
+                "git": "https://github.com/antoinel74/AZ-Store",
+                "deploy": ""
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "cards" : 
+        [
+            {
+                "image": "public/screen/home/pokedex.png",
+                "title": "Pokedex",
+                "preview": "A pokepedia-like page",
+                "deadline": "20 november 2023",
+                "tech": ["HTML, SASS, PHP"],
+                "git": "https://github.com/JustineLeleu/Pokedex",
+                "deploy": ""
+            }
+        ],
+        "infos" : 
+        [
+            {
+                "title": "Pokedex",
+                "overview": "Develop a Pokedex application using PHP procedural programming. The application should have an index.php page displaying a list of Pokemon. Users should be able to click on a Pokemon to view its details and evolution. Additionally, implement an user authentication system with a login and registration page, allowing users to save their favorite Pokemon. This project was made in november 2023 during a formation at BeCode.",
+                "screens": [""],
+                "tech": ["HTML, SASS, PHP"],
+                "git": "https://github.com/JustineLeleu/Pokedex",
+                "deploy": ""
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "cards" : 
+        [
+            {
+                "image": "public/screen/home/movie.png",
+                "title": "The Movie Browser App",
+                "preview": "A clone of every streaming platform",
+                "deadline": "1 december 2023",
+                "tech": ["HTML, SASS, React, Vite.JS"],
+                "git": "https://github.com/RosaBld/movieBrowser",
+                "deploy": "https://movie-browser-phi.vercel.app/"
+            }
+        ],
+        "infos" : 
+        [
+            {
+                "title": "The Movie Browser App",
+                "overview": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
+                "screens": [""],
+                "tech": ["HTML, SASS, React, Vite.JS"],
+                "git": "https://github.com/RosaBld/movieBrowser",
+                "deploy": "https://movie-browser-phi.vercel.app/"
+            }
+        ]
+    },
+
+    {
+        "id": 4,
+        "cards" : 
+        [
+            {
+                "image": "public/screen/home/cogip.png",
+                "title": "COGIP",
+                "preview": "An invoice management app",
+                "deadline": "20 december 2023",
+                "tech": ["HTML, SASS, React, Vite.JS"],
+                "git": "https://github.com/Robpiot/COGIP-GP3",
+                "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/"
+            }
+        ],
+        "infos" : 
+        [
+            {
+                "title": "COGIP",
+                "overview": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
+                "screens": [""],
+                "tech": ["HTML, SASS, React, Vite.JS"],
+                "git": "https://github.com/Robpiot/COGIP-GP3",
+                "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/"
+            }
+        ]
+    }
+]
