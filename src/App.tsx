@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { About } from './components/About';
 import { Home } from './components/Home';
 import { Tech } from './components/Tech';
-import { Projects } from './components/Projects';
+import Projects from './components/Projects';
 
 function App() {
 

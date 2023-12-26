@@ -5,7 +5,10 @@ export default {
     extend: {
       flex: {
         '6': '6 6 0%',
-      }
+      },
+      fontFamily: {
+        'custom': ['Poppins', 'sans-serif']
+      },
     },
   },
   plugins: [],

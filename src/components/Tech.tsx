@@ -2,7 +2,7 @@
 
 export function Tech() {
     return (
-        <div className="p-10">
+        <div className="p-10 font-custom">
             <h2 className="text-4xl font-bold p-2 m-2">
                 My Tech Stack
             </h2>

@@ -1,8 +1,8 @@
 export function About() {
     return (
-        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center p-20">
+        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-16 pb-8">
             <div className="max-w-xl">
-                <h1 className="text-4xl uppercase font-bold text-left">
+                <h1 className="text-4xl uppercase font-bold text-lef font-customt">
                     Hi, my name is 
                         <span style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </span> 
                     and I'm a junior frontend web developper!
