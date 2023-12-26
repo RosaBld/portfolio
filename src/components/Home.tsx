@@ -1,11 +1,11 @@
-import { About } from "./About";
 import { Tech } from "./Tech";
 import Projects from "./Projects";
+import { Intro } from "./Intro";
 
 export function Home() {
     return (
         <>
-            <About />
+            <Intro />
             <Tech />
             <Projects />
         </>

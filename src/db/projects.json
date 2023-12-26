@@ -40,27 +40,27 @@
 
     {
         "id": 3,
-                "image": "/screen/home/movie.png",
-                "title": "The Movie Browser App",
-                "preview": "A clone of every streaming platform",
-                "deadline": "01/12/2023",
-                "tech": ["HTML, SASS, React, Vite.JS"],
-                "git": "https://github.com/RosaBld/movieBrowser",
-                "deploy": "https://movie-browser-phi.vercel.app/",
-                "overview": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
-                "screens": [""]
+            "image": "/screen/home/movie.png",
+            "title": "The Movie Browser App",
+            "preview": "A clone of every streaming platform",
+            "deadline": "01/12/2023",
+            "tech": ["HTML, SASS, React, Vite.JS"],
+            "git": "https://github.com/RosaBld/movieBrowser",
+            "deploy": "https://movie-browser-phi.vercel.app/",
+            "overview": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
+            "screens": [""]
     },
 
     {
         "id": 4,
-                "image": "/screen/home/cogip.png",
-                "title": "COGIP",
-                "preview": "An invoice management app",
-                "deadline": "20/12/2023",
-                "tech": ["HTML, SASS, React, Vite.JS"],
-                "git": "https://github.com/Robpiot/COGIP-GP3",
-                "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
-                 "overview": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
-                "screens": [""]
+            "image": "/screen/home/cogip.png",
+            "title": "COGIP",
+            "preview": "An invoice management app",
+            "deadline": "20/12/2023",
+            "tech": ["HTML, SASS, React, Vite.JS"],
+            "git": "https://github.com/Robpiot/COGIP-GP3",
+            "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
+                "overview": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
+            "screens": [""]
     }
 ]

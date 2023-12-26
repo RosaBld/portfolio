@@ -1,3 +1,6 @@
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -9,7 +12,21 @@ export default {
       fontFamily: {
         'custom': ['Poppins', 'sans-serif']
       },
+      gradientColorStops: {
+        'cyan': '#00FFFF',
+        'blue': '#0000FF',
+        'violet': '#8F59F6',
+        'fuchsia': '#FF00FF',
+      }
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      backgroundImage: ['hover', 'focus'],
+    },
+  },
+  plugins: [
+    tailwindcss,
+    autoprefixer,
+  ],
 }
