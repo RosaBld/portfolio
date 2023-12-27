@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../db/projects.json';
-import { Project } from '../types/types';
+import { Project } from '../types/index.d';
 import { LanguageContext } from './LanguageContext';
 import { Back, BackNext } from './Buttons';
 

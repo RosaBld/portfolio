@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import data from '../db/projects.json';
-import { Project } from '../types/types';
+import { Project } from '../types/index.d';
 import { Link, useLocation } from 'react-router-dom';
 import React, { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';

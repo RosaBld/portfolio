@@ -124,8 +124,8 @@
         "git": "https://github.com/RosaBld/portfolio",
         "deploy": "",
         "overview": {
-            "en": "",
-            "fr": ""
+            "en": "This project is a solo project to go deeper in React and Vite.JS but also to learn Typescript and Tailwind. The goal of this project was to be able to create, completely solo, a side project, to get idea and to put them together. It was also a great way to show some of the skills I learned during my classes and to put them together for a future internship",
+            "fr": "Ce projet est un projet solo pour approfondir mes connaissances en React et Vite.JS, mais aussi pour apprendre Typescript et Tailwind. L'objectif de ce projet était de pouvoir créer, entièrement seul, un projet secondaire, pour avoir des idées et les rassembler. C'était aussi une excellente façon de montrer certaines des compétences que j'ai acquises pendant mes cours et de les rassembler pour un futur stage."
         },
         "screens": ["/screen/cards/portfolio/portfolio.png", "/screen/cards/portfolio/portfolio2.png", "/screen/cards/portfolio/portfolio3.png", "/screen/cards/portfolio/portfolio4.png", "/screen/cards/portfolio/portfolio5.png"] 
     }

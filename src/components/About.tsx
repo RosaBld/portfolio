@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import workData from '../db/workData.json';
 import educationData from "../db/education.json";
-import { WorkData, EducationData } from '../types/types';
+import { WorkData, EducationData } from '../types/index.d';
 import { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
 
