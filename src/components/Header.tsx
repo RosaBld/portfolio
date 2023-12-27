@@ -19,7 +19,7 @@ export function Header() {
     return (
         <div className="flex flex-row justify-between h-20 p-5 font-custom gap-8">
             <button onClick={toggleSidebar} className="px-4 py-2 bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-125 lg:hidden">
-                {isOpen ? 'Close menu' : 'Open menu'}
+                {isOpen ? 'Menu' : 'Menu'}
             </button>
             <div className={`fixed top-16 left-0 w-auto h-full bg-transparent lg:static lg:bg-transparent ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center`}>
                 <ul className={`flex flex-col gap-12 items-center lg:flex-row lg:gap-20`}>

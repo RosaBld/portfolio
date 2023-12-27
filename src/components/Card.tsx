@@ -48,8 +48,8 @@ const Card: React.FC = () => {
                     </div>
                 </div>
                 
-                <div className="p-20 bg-slate-200 rounded-2xl">
-                    <div className="flex flex-col gap-16 ">
+                <div className="p-8 lg:p-20 bg-slate-200 rounded-2xl">
+                    <div className="flex flex-col gap-8 md:gap-16">
                         {project.screens.map((screen, index) => (
                             <img key={index} src={screen} alt="{project.title}" />
                         ))}
