@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
                         <div key={project.id} className="w-60 justify-center">
                             <div key={t(project.title[language])} className="flex flex-col items-center bg-gray-50 h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105">
                                 <Link to={`/Card/${project.id}`}>    
-                                    <img src={project.image} className="w-fit object-cover h-40 rounded-lg" />
+                                    <img src={project.image} className="w-full object-cover h-40 rounded-lg" />
                                     <div className="p-4 text-left w-60">
                                         <h3 className="font-bold text-xl h-12">{t(project.title[language])}</h3>
                                         <p className="text-sm pt-4 text-gray-400 h-24">{t(project.preview[language])}</p>
