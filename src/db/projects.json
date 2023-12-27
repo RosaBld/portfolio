@@ -1,6 +1,6 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "image": "/screen/home/weatherApp.png",
         "title": {
             "en": "The weather App",
@@ -15,13 +15,13 @@
         "git": "https://github.com/RosaBld/WeatherApp",
         "deploy": "https://quiet-dolphin-6ecc99.netlify.app/",
         "overview": {
-            "en": "In this weather app, you can select the city from where you want the weather...",
-            "fr": "Dans cette application météo, vous pouvez sélectionner la ville dont vous voulez connaître la météo..."
+            "en": "In this weather app, you can select the city from where you want the weather. It will display for you the forecast of the 5 next day (including today) with the date (including the day of the week), an cute little icon with the forecast, the min and max temperature and the weather (rain ? snow ? sun ?). You'll also be abble to select multiple cities if you need to compare their weather for the next few days. Every past research will be stored on your side and every time you'll reload the page, you'll still see your previous researches with the different forecasts still showing on your awesome webpage. To clean it, you simply have to ckicl on the magnificient button at the bottom of the page.",
+            "fr": "Dans cette application météo, vous pouvez sélectionner la ville dont vous souhaitez connaître la météo. Elle affichera pour vous les prévisions des 5 prochains jours (y compris aujourd'hui) avec la date (y compris le jour de la semaine), une jolie petite icône avec les prévisions, la température minimale et maximale et la météo (pluie ? neige ? soleil ?). Vous pourrez également sélectionner plusieurs villes si vous avez besoin de comparer leur météo pour les prochains jours. Chaque recherche passée sera stockée de votre côté et chaque fois que vous rechargerez la page, vous verrez toujours vos recherches précédentes avec les différentes prévisions toujours affichées sur votre magnifique page web. Pour la nettoyer, il vous suffit de cliquer sur le magnifique bouton en bas de la page."
         },
-        "screens": [""]
+        "screens": ["/screen/cards/WeatherApp/weatherApp.png", "/screen/cards/WeatherApp/weatherApp2.png", "/screen/cards/WeatherApp/weatherApp3.png", "/screen/cards/WeatherApp/weatherApp4.png"]
     },
     {
-        "id": 1,
+        "id": 2,
         "image": "/screen/home/azstore.png",
         "title": {
             "en": "AZ-Store",
@@ -36,14 +36,14 @@
         "git": "https://github.com/antoinel74/AZ-Store",
         "deploy": "",
         "overview": {
-            "en": "",
-            "fr": ""
+            "en": "This project is part of the Becode PHP course. and consist to a small e-shop app built in PHP. The main goal of this project was to be able to display the products stored in a db, add a shopping cart with verified and sanitized checkout form and a usage of sessions to store the cart",
+            "fr": "Ce projet fait partie du cours PHP de Becode. Il consiste en une petite application e-shop construite en PHP. L'objectif principal de ce projet était de pouvoir afficher les produits stockés dans une base de données, ajouter un panier d'achat avec un formulaire de paiement vérifié et assaini, et utiliser des sessions pour stocker le panier."
         },
-        "screens": [""]
+        "screens": ["/screen/cards/AZStore/azstore.png","/screen/cards/AZStore/azstore2.png","/screen/cards/AZStore/azstore3.png","/screen/cards/AZStore/azstore4.png","/screen/cards/AZStore/azstore5.png","/screen/cards/AZStore/azstore6.png","/screen/cards/AZStore/azstore7.png","/screen/cards/AZStore/azstore8.png"]
     },
 
     {
-        "id": 2,
+        "id": 3,
         "image": "/screen/home/pokedex.png",
         "title": {
             "en": "Pokedex",
@@ -61,11 +61,11 @@
             "en": "Develop a Pokedex application using PHP procedural programming. The application should have an index.php page displaying a list of Pokemon. Users should be able to click on a Pokemon to view its details and evolution. Additionally, implement an user authentication system with a login and registration page, allowing users to save their favorite Pokemon. This project was made in november 2023 during a formation at BeCode.",
             "fr": "Développez une application Pokedex en utilisant la programmation procédurale PHP. L'application doit avoir une page index.php affichant une liste de Pokemon. Les utilisateurs doivent pouvoir cliquer sur un Pokemon pour voir ses détails et son évolution. De plus, mettez en place un système d'authentification utilisateur avec une page de connexion et d'inscription, permettant aux utilisateurs de sauvegarder leurs Pokemon préférés. Ce projet a été réalisé en novembre 2023 lors d'une formation à BeCode."
         },
-        "screens": [""]
+        "screens": ["/screen/cards/Pokedex/pokedex.png", "/screen/cards/Pokedex/pokedex2.png", "/screen/cards/Pokedex/pokedex3.png", "/screen/cards/Pokedex/pokedex4.png"] 
     },
 
     {
-        "id": 3,
+        "id": 4,
         "image": "/screen/home/movie.png",
         "title": {
             "en": "The Movie Browser App",
@@ -83,41 +83,41 @@
             "en": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
             "fr": "Dans cette application, vous trouverez une application de navigation de films de base où vous pouvez voir une bannière avec l'un des films tendance, qui change à chaque chargement. Vous trouverez également une liste de films. Lorsque vous cliquez sur le film que vous souhaitez voir, vous serez redirigé vers une page web qui vous donnera des informations : synopsis, critiques, genre, nom du film et aussi des films similaires qui pourraient vous intéresser. Lorsque vous cliquez sur le genre ou l'un des genres du film, vous serez alors redirigé vers une nouvelle page web vous listant différents films de ce genre. Par manque de temps, je n'ai pas pu mettre en place une page de connexion, une barre de recherche ou même un filtre par genres, mais c'était bien dans mes intentions."
         },
-        "screens": [""]
+        "screens": ["/screen/cards/TMDB/movie.png", "/screen/cards/TMDB/movie2.png", "/screen/cards/TMDB/movie3.png", "/screen/cards/TMDB/movie4.png", "/screen/cards/TMDB/movie5.png"]
     },
 
     {
-        "id": 4,  
+        "id": 5,  
         "image": "/screen/home/cogip.png",
         "title": {
             "en": "COGIP",
             "fr": "COGIP"
         },
         "preview": {
-            "en": "An invoice management app",
-            "fr": "Une application de gestion des factures"
+            "en": "Accounting database system to manage financial and contact informations",
+            "fr": "Système de base de données comptable pour gérer informations financières et de contact."
         },
         "deadline": "20/12/2023",
         "tech": ["HTML, SASS, React, Vite.JS"],
         "git": "https://github.com/Robpiot/COGIP-GP3",
         "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
         "overview": {
-            "en": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
-            "fr": "Ce projet est un système de base de données comptable conçu pour gérer les informations financières et de contact à travers une interface conviviale. Le système s'adresse à deux principaux profils d'utilisateurs : Admin et utilisateur."
+            "en": "The project aims to streamline the management of financial and contact data, providing a convenient and efficient solution for accounting tasks. The user interface is intuitive, allowing users to easily navigate through different sections, view detailed information, and perform necessary administrative actions.",
+            "fr": "Le projet vise à rationaliser la gestion des données financières et de contact, en fournissant une solution pratique et efficace pour les tâches comptables. L'interface utilisateur est intuitive, permettant aux utilisateurs de naviguer facilement à travers différentes sections, de visualiser des informations détaillées et d'effectuer les actions administratives nécessaires."
         },
-        "screens": [""] 
+        "screens": ["/screen/cards/COGIP/cogip.png", "/screen/cards/COGIP/cogip2.png", "/screen/cards/COGIP/cogip3.png", "/screen/cards/COGIP/cogip4.png", "/screen/cards/COGIP/cogip5.png"] 
     },
 
     {
-        "id": 5,  
+        "id": 6,  
         "image": "/screen/home/portfolio.png",
         "title": {
             "en": "Portfolio",
             "fr": "Portfolio"
         },
         "preview": {
-            "en": "A web page to show my work",
-            "fr": "Une page web pour présenter mon travail"
+            "en": "A portfolio web page to show my work",
+            "fr": "Une page web portfolio afin de présenter mon travail"
         },
         "deadline": "01/01/2024",
         "tech": ["React, Typescript, Vite.JS, Tailwind"],
@@ -127,6 +127,6 @@
             "en": "",
             "fr": ""
         },
-        "screens": [""] 
+        "screens": ["/screen/cards/portfolio/portfolio.png", "/screen/cards/portfolio/portfolio2.png", "/screen/cards/portfolio/portfolio3.png", "/screen/cards/portfolio/portfolio4.png", "/screen/cards/portfolio/portfolio5.png"] 
     }
 ]

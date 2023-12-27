@@ -19,8 +19,8 @@ const Projects: React.FC = () => {
             <div className="pt-10 font-custom">
                 <div className="py-10" >
                     
-                    <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-6xl'}`}>{t('project_title')}</h2>
-                    <p className={`${isHomePage ? 'text-center text-2xl' : 'text-left text-3xl'}`}>{t('project_text')}</p>
+                    <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
+                    <p className={`${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 justify-items-center font-custom">
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
                                     <img src={project.image} className="w-fit object-cover h-40 rounded-lg" />
                                     <div className="p-4 text-left w-60">
                                         <h3 className="font-bold text-xl h-12">{t(project.title[language])}</h3>
-                                        <p className="text-sm pt-4 text-gray-400 h-16">{t(project.preview[language])}</p>
+                                        <p className="text-sm pt-4 text-gray-400 h-24">{t(project.preview[language])}</p>
                                         <p className="text-xs pt-4 h-8">Project Deadline: <span className=" text-gray-600"> {project.deadline} </span></p>
                                         <p className="text-xs pt-4 h-8">Tech stack:<span className=" text-gray-600"> {project.tech} </span></p>
                                     </div>

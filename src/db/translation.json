@@ -21,7 +21,10 @@
             "contact3": "!",
             "build1": "Build by",
             "build2": "as a side project with",
-            "build3": "and"
+            "build3": "and",
+            "backpro": "Back to projects",
+            "next": "Next",
+            "back": "Back" 
         }
     },
 
@@ -47,7 +50,10 @@
             "contact3": "!",
             "build1": "Produit par",
             "build2": "en tant que projet parallèle avec",
-            "build3": "et" 
+            "build3": "et",
+            "backpro": "Retour aux projets",
+            "next": "Suivant",
+            "back": "Précédent" 
         }
     
     }

@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { LanguageContext } from './components/LanguageContext';
+import Card from './components/Card'
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -28,6 +29,7 @@ function App() {
         <Route path="/tech" element={<Tech />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/card/:id" element={<Card />} />
       </Routes>
       <Footer />
     </LanguageContext.Provider>

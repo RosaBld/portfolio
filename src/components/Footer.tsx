@@ -5,8 +5,8 @@ export function Footer() {
     const { t } = useTranslation();
 
     return (
-        <div className="font-custom text-sm">
-            <div className="flex flex-row justify-between pt-28 pb-10 px-24">
+        <div className="font-custom text-xs">
+            <div className="gap-4 flex flex-col items-center lg:flex lg:flex-row lg:justify-between pt-28 pb-10 px-24">
                 <p>+32 493 78 17 97</p>
                 <p>rosalie.boulard@gmail.com</p>
                 <div className="flex flex-row gap-10">
@@ -22,7 +22,7 @@ export function Footer() {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-row justify-between pt-10 border-t-4 ">
+            <div className="grid grid-rows-2 justify-items-center gap-4 lg:flex lg:lex-row lg:justify-between pt-10 border-t-4 ">
                 <ul className="flex flex-row space-x-4 gap-5">
                     <li>
                         <Link to="/">{t('home')}</Link>

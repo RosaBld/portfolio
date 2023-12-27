@@ -11,8 +11,6 @@ i18n
     interpolation: {
       escapeValue: false
     }
-  });
-
-  console.log(i18n.options.resources);
+});
 
 export default i18n;

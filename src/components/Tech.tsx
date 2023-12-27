@@ -11,10 +11,10 @@ export function Tech() {
     return (
         <div className="pt-10 font-custom">
             <div className="py-10">
-                <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-6xl'}`}>
+                <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>
                     {t('tech_title')}
                 </h2>
-                <p className={`${isHomePage ? 'text-center text-2xl ' : 'text-left text-3xl'}`}>
+                <p className={`${isHomePage ? 'text-center text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
                     {t('tech_text')}
                 </p>
             </div>
