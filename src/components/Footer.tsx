@@ -7,7 +7,7 @@ export function Footer() {
     return (
         <div className="font-custom text-xs">
             <div className="gap-4 flex flex-col items-center lg:flex lg:flex-row lg:justify-between pt-28 pb-10 px-24">
-                <p>+32 493 78 17 97</p>
+                <p>+32 222 22 22 22</p>
                 <p>rosalie.boulard@gmail.com</p>
                 <div className="flex flex-row gap-10">
                     <a href="https://github.com/RosaBld" target="_blank" rel="noopener noreferrer">
