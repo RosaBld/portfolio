@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import { LanguageSwitch } from "./LanguageSwitch";
+import { useTranslation } from 'react-i18next';
+
 
 export function Header() {
+    const { t } = useTranslation();
+
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
 
@@ -9,19 +14,19 @@ export function Header() {
         <div className="flex flex-row justify-between p-5 font-custom">
             <ul className="flex flex-row space-x-4 gap-12">
                 <li className="transform transition-transform duration-500 hover:scale-150">
-                    <Link to="/" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">Home</Link>
+                    <Link to="/" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('home')}</Link>
                 </li>
                 <li className="transform transition-transform duration-500 hover:scale-150">
-                    <Link to="/about" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">About</Link>
+                    <Link to="/about" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('about')}</Link>
                 </li>
                 <li className="transform transition-transform duration-500 hover:scale-150">
-                    <Link to="/tech" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">Tech Stack</Link>
+                    <Link to="/tech" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('techstack')}</Link>
                 </li>
                 <li className="transform transition-transform duration-500 hover:scale-150">
-                    <Link to="/projects" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">Projects</Link>
+                    <Link to="/projects" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('projects')}</Link>
                 </li>
                 <li className="transform transition-transform duration-500 hover:scale-150">
-                    <Link to="/contact" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">Contact</Link>
+                    <Link to="/contact" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('contacts')}</Link>
                 </li>
             </ul>
             <ul className="flex flex-row space-x-4 gap-6">
@@ -66,6 +71,7 @@ export function Header() {
                     </a>
                 </li>
             </ul>
+            <LanguageSwitch />
         </div>
     )
 }

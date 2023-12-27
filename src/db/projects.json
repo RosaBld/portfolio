@@ -2,65 +2,131 @@
     {
         "id": 0,
         "image": "/screen/home/weatherApp.png",
-        "title": "The weather App",
-        "preview": "A weather app using OpenWeather API",
+        "title": {
+            "en": "The weather App",
+            "fr": "L'application météo"
+        },
+        "preview": {
+            "en": "A weather app using OpenWeather API",
+            "fr": "Une application météo utilisant l'API OpenWeather"
+        },
         "deadline": "12/10/2023",
         "tech": ["HTML, SASS, JavaScript"],
         "git": "https://github.com/RosaBld/WeatherApp",
         "deploy": "https://quiet-dolphin-6ecc99.netlify.app/",
-        "overview": "In this weather app, you can select the city from where you want the weather. It will display for you the forecast of the 5 next day (including today) with the date (including the day of the week), an cute little icon with the forecast, the min and max temperature and the weather (rain ? snow ? sun ?). You'll also be abble to select multiple cities if you need to compare their weather for the next few days. Every past research will be stored on your side and every time you'll reload the page, you'll still see your previous researches with the different forecasts still showing on your awesome webpage. To clean it, you simply have to ckicl on the magnificient button at the bottom of the page.",
+        "overview": {
+            "en": "In this weather app, you can select the city from where you want the weather...",
+            "fr": "Dans cette application météo, vous pouvez sélectionner la ville dont vous voulez connaître la météo..."
+        },
         "screens": [""]
     },
-
     {
         "id": 1,
         "image": "/screen/home/azstore.png",
-        "title": "AZ-Store",
-        "preview": "A shoe shop store using PHP my Admin",
+        "title": {
+            "en": "AZ-Store",
+            "fr": "AZ-Store"
+        },
+        "preview": {
+            "en": "A shoe shop store using PHP my Admin",
+            "fr": "Un magasin de chaussures utilisant PHP my Admin"
+        },
         "deadline": "27/10/2023",
         "tech": ["HTML, SASS, PHP, JSON"],
         "git": "https://github.com/antoinel74/AZ-Store",
         "deploy": "",
-        "overview": "",
+        "overview": {
+            "en": "",
+            "fr": ""
+        },
         "screens": [""]
     },
 
     {
         "id": 2,
         "image": "/screen/home/pokedex.png",
-        "title": "Pokedex",
-        "preview": "A pokepedia-like page",
+        "title": {
+            "en": "Pokedex",
+            "fr": "Pokedex"
+        },
+        "preview": {
+            "en": "A pokepedia-like page",
+            "fr": "Une page semblable à pokepedia"
+        },
         "deadline": "20/11/2023",
         "tech": ["HTML, SASS, PHP"],
         "git": "https://github.com/JustineLeleu/Pokedex",
         "deploy": "",
-        "overview": "Develop a Pokedex application using PHP procedural programming. The application should have an index.php page displaying a list of Pokemon. Users should be able to click on a Pokemon to view its details and evolution. Additionally, implement an user authentication system with a login and registration page, allowing users to save their favorite Pokemon. This project was made in november 2023 during a formation at BeCode.",
+        "overview": {
+            "en": "Develop a Pokedex application using PHP procedural programming. The application should have an index.php page displaying a list of Pokemon. Users should be able to click on a Pokemon to view its details and evolution. Additionally, implement an user authentication system with a login and registration page, allowing users to save their favorite Pokemon. This project was made in november 2023 during a formation at BeCode.",
+            "fr": "Développez une application Pokedex en utilisant la programmation procédurale PHP. L'application doit avoir une page index.php affichant une liste de Pokemon. Les utilisateurs doivent pouvoir cliquer sur un Pokemon pour voir ses détails et son évolution. De plus, mettez en place un système d'authentification utilisateur avec une page de connexion et d'inscription, permettant aux utilisateurs de sauvegarder leurs Pokemon préférés. Ce projet a été réalisé en novembre 2023 lors d'une formation à BeCode."
+        },
         "screens": [""]
     },
 
     {
         "id": 3,
-            "image": "/screen/home/movie.png",
-            "title": "The Movie Browser App",
-            "preview": "A clone of every streaming platform",
-            "deadline": "01/12/2023",
-            "tech": ["HTML, SASS, React, Vite.JS"],
-            "git": "https://github.com/RosaBld/movieBrowser",
-            "deploy": "https://movie-browser-phi.vercel.app/",
-            "overview": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
-            "screens": [""]
+        "image": "/screen/home/movie.png",
+        "title": {
+            "en": "The Movie Browser App",
+            "fr": "L'application de navigation de films"
+        },
+        "preview": {
+            "en": "A clone of every streaming platform",
+            "fr": "Un clone de toutes les plateformes de streaming"
+        },
+        "deadline": "01/12/2023",
+        "tech": ["HTML, SASS, React, Vite.JS"],
+        "git": "https://github.com/RosaBld/movieBrowser",
+        "deploy": "https://movie-browser-phi.vercel.app/",
+        "overview": {
+            "en": "In this App, you'll find a basic Movie Browser Application where you can see a Banner with one of the trending movie, changing with each load. You will also find a list of movies. When clicking on wathever movie you'd like to see, you will be redirected to a webpage that will give you some informations: synopsis, reviews, genre, movie name and as well a similiar movies that you may find interesting. When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre. By lack of time, I wasn't able to implement a login page, a searchbar or even a filter by genres, but it was indeed in my mind.",
+            "fr": "Dans cette application, vous trouverez une application de navigation de films de base où vous pouvez voir une bannière avec l'un des films tendance, qui change à chaque chargement. Vous trouverez également une liste de films. Lorsque vous cliquez sur le film que vous souhaitez voir, vous serez redirigé vers une page web qui vous donnera des informations : synopsis, critiques, genre, nom du film et aussi des films similaires qui pourraient vous intéresser. Lorsque vous cliquez sur le genre ou l'un des genres du film, vous serez alors redirigé vers une nouvelle page web vous listant différents films de ce genre. Par manque de temps, je n'ai pas pu mettre en place une page de connexion, une barre de recherche ou même un filtre par genres, mais c'était bien dans mes intentions."
+        },
+        "screens": [""]
     },
 
     {
-        "id": 4,
-            "image": "/screen/home/cogip.png",
-            "title": "COGIP",
-            "preview": "An invoice management app",
-            "deadline": "20/12/2023",
-            "tech": ["HTML, SASS, React, Vite.JS"],
-            "git": "https://github.com/Robpiot/COGIP-GP3",
-            "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
-                "overview": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
-            "screens": [""]
+        "id": 4,  
+        "image": "/screen/home/cogip.png",
+        "title": {
+            "en": "COGIP",
+            "fr": "COGIP"
+        },
+        "preview": {
+            "en": "An invoice management app",
+            "fr": "Une application de gestion des factures"
+        },
+        "deadline": "20/12/2023",
+        "tech": ["HTML, SASS, React, Vite.JS"],
+        "git": "https://github.com/Robpiot/COGIP-GP3",
+        "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
+        "overview": {
+            "en": "This project is an accounting database system designed to manage financial and contact information through a user-friendly interface. The system caters to two main user profiles: Admin and user.",
+            "fr": "Ce projet est un système de base de données comptable conçu pour gérer les informations financières et de contact à travers une interface conviviale. Le système s'adresse à deux principaux profils d'utilisateurs : Admin et utilisateur."
+        },
+        "screens": [""] 
+    },
+
+    {
+        "id": 5,  
+        "image": "/screen/home/portfolio.png",
+        "title": {
+            "en": "Portfolio",
+            "fr": "Portfolio"
+        },
+        "preview": {
+            "en": "A web page to show my work",
+            "fr": "Une page web pour présenter mon travail"
+        },
+        "deadline": "01/01/2024",
+        "tech": ["React, Typescript, Vite.JS, Tailwind"],
+        "git": "https://github.com/RosaBld/portfolio",
+        "deploy": "",
+        "overview": {
+            "en": "",
+            "fr": ""
+        },
+        "screens": [""] 
     }
 ]

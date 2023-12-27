@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom"
 
 export function Intro() {
+    const { t } = useTranslation();
+
     return (
         <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-16 pb-8">
             <div className="max-w-xl">
                 <h1 className="text-4xl uppercase font-bold text-left font-custom">
-                    Hi, my name is 
+                    {t('intro_greeting')} 
                         <Link to="/about" style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </Link> 
-                    and I'm a junior frontend web developper!
+                    {t('intro_role')}
                 </h1>
             </div>
             <div className="relative rounded-full overflow-hidden p-3">

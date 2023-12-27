@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
 export function Footer() {
+    const { t } = useTranslation();
+
     return (
         <div className="font-custom text-sm">
             <div className="flex flex-row justify-between pt-28 pb-10 px-24">
@@ -22,23 +25,23 @@ export function Footer() {
             <div className="flex flex-row justify-between pt-10 border-t-4 ">
                 <ul className="flex flex-row space-x-4 gap-5">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">{t('home')}</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">{t('about')}</Link>
                     </li>
                     <li>
-                        <Link to="/tech">Tech Stack</Link>
+                        <Link to="/tech">{t('techstack')}</Link>
                     </li>
                     <li>
-                        <Link to="/projects">Pojects</Link>
+                        <Link to="/projects">{t('projects')}</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact">{t('contacts')}</Link>
                     </li>
                 </ul>
                 <ul>
-                    <li>Build by <span style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </span> as a side project with <span style={{ background: 'linear-gradient(to bottom, cyan, blue)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Tailwind </span> and <span style={{ background: 'linear-gradient(to bottom, cyan, blue)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Typescript </span></li>
+                    <li>{t('build1')} <span style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </span> {t('build2')} <span style={{ background: 'linear-gradient(to bottom, cyan, blue)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Tailwind </span> {t('build3')} <span style={{ background: 'linear-gradient(to bottom, cyan, blue)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Typescript </span></li>
                 </ul>
             </div>
         </div>

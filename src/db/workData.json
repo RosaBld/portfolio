@@ -1,0 +1,34 @@
+[
+    {
+      "title": {
+        "en": "Junior web Developer",
+        "fr": "Junior web Developer"
+      },
+      "time": {
+        "en": "Full Time",
+        "fr": "Temps plein"
+      },
+      "place": "BeCode",
+      "location": "Charleroi",
+      "date": {
+        "en": "Aug 2023 - March 2024",
+        "fr": "Août 2023 - Mars 2024"
+      }
+    },
+    {
+      "title": {
+        "en": "Worker",
+        "fr": "Ouvrière"
+      },
+      "time": {
+        "en": "Full Time",
+        "fr": "Temps plein"
+      },
+      "place": "Schneider Electric",
+      "location": "Uccles",
+      "date": {
+        "en": "Sep 2022 - Aug 2023",
+        "fr": "Sept 2022 - Août 2023"
+      }
+    }
+]

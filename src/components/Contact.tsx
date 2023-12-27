@@ -1,14 +1,18 @@
+import { useTranslation } from 'react-i18next';
+
 export function Contact() {
+    const { t } = useTranslation();
+
     return (
         <div className="p-20">
             <h2 className="text-6xl font-bold p-2 m-2">
-                You can contact me via
+                {t('contact1')}
                 <a href="https://www.linkedin.com/in/rosalie-boulard/"> 
                 <span style={{ background: 'linear-gradient(to bottom, cyan, blue)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Linkedin </span>
                 </a>
-                or via mail at 
+                {t('contact2')} 
                     <span style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> rosalie.boulard@gmail.com </span>
-                !
+                {t('contact3')}
             </h2>
         </div>
     )

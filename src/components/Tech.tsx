@@ -1,14 +1,23 @@
-
+import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export function Tech() {
+    const location = useLocation();
+
+    const { t } = useTranslation();
+
+    const isHomePage = location.pathname === '/';
+
     return (
-        <div className="p-10 font-custom">
-            <h2 className="text-4xl font-bold p-2 m-2">
-                My Tech Stack
-            </h2>
-            <p className="text-2xl">
-                Technologies I learned and used during my classes
-            </p>
+        <div className="pt-10 font-custom">
+            <div className="py-10">
+                <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-6xl'}`}>
+                    {t('tech_title')}
+                </h2>
+                <p className={`${isHomePage ? 'text-center text-2xl ' : 'text-left text-3xl'}`}>
+                    {t('tech_text')}
+                </p>
+            </div>
 
             <div className="flex items-center justify-center">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center items-center p-10 gap-10">

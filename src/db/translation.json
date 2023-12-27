@@ -1,0 +1,54 @@
+{
+    "en" : {
+        "translation" : {
+            "home": "Home",
+            "about": "About",
+            "techstack": "Tech Stack",
+            "projects": "Projects",
+            "contacts": "Contacts",
+            "intro_greeting": "Hi, my name is",
+            "intro_role": "and I'm a junior frontend web developer!",
+            "project_title": "Projects",
+            "project_text": "Things I've done so far",
+            "tech_title" : "My Tech Stack",
+            "tech_text": "Technologies I learned and used during my classes",
+            "about_title": "About Me",
+            "about_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias unde dolor nemo nesciunt dolores asperiores consequatur doloribus maiores minus consectetur deserunt, dolorum ab facere. Itaque libero nobis officiis? Consectetur, explicabo?",
+            "work_title": "Work Experience",
+            "education_title": "Education",
+            "contact1": "You can contact me via",
+            "contact2": "or via mail at",
+            "contact3": "!",
+            "build1": "Build by",
+            "build2": "as a side project with",
+            "build3": "and"
+        }
+    },
+
+    "fr" : {
+        "translation" : {
+            "home": "Acceuil",
+            "about": "A propos",
+            "techstack": "Tech Stack",
+            "projects": "Projets",
+            "contacts": "Contacts",
+            "intro_greeting": "Bonjour, je m'appelle",
+            "intro_role": "et je suis une développeuse web junior en frontend !",
+            "project_title": "Projets",
+            "project_text": "Ce que j'ai fait jusqu'à présent",
+            "tech_title" : "Mon Tech Stack",
+            "tech_text": "Technologies que j'ai appris et utilisés durant ma formation",
+            "about_title": "A propos de moi",
+            "about_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias unde dolor nemo nesciunt dolores asperiores consequatur doloribus maiores minus consectetur deserunt, dolorum ab facere. Itaque libero nobis officiis? Consectetur, explicabo?",
+            "work_title": "Expérience professionnelle",
+            "education_title": "Education",
+            "contact1": "Vous pouvez me contacter par",
+            "contact2": "ou par mail à l'adresse",
+            "contact3": "!",
+            "build1": "Produit par",
+            "build2": "en tant que projet parallèle avec",
+            "build3": "et" 
+        }
+    
+    }
+}
