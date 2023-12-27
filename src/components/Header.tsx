@@ -7,6 +7,10 @@ import { useTranslation } from 'react-i18next';
 export function Header() {
     const { t } = useTranslation();
 
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
+
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
 
@@ -24,19 +28,19 @@ export function Header() {
             <div className={`fixed top-16 left-0 w-auto h-full bg-transparent lg:static lg:bg-transparent ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center`}>
                 <ul className={`flex flex-col gap-12 items-center lg:flex-row lg:gap-20`}>
                     <li className="transform transition-transform duration-500 hover:scale-150">
-                        <Link to="/" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('home')}</Link>
+                        <Link to="/" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('home')}</Link>
                     </li>
                     <li className="transform transition-transform duration-500 hover:scale-150">
-                        <Link to="/about" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('about')}</Link>
+                        <Link to="/about" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('about')}</Link>
                     </li>
                     <li className="transform transition-transform duration-500 hover:scale-150">
-                        <Link to="/tech" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('techstack')}</Link>
+                        <Link to="/tech" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('techstack')}</Link>
                     </li>
                     <li className="transform transition-transform duration-500 hover:scale-150">
-                        <Link to="/projects" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('projects')}</Link>
+                        <Link to="/projects" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('projects')}</Link>
                     </li>
                     <li className="transform transition-transform duration-500 hover:scale-150">
-                        <Link to="/contact" className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('contacts')}</Link>
+                        <Link to="/contact" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('contacts')}</Link>
                     </li>
                     <li>
                         <a href="https://github.com/RosaBld" target="_blank" rel="noopener noreferrer">

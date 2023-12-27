@@ -24,22 +24,24 @@ export function BackNext() {
     const { t } = useTranslation();
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
-    const totalProjects = projects.length; // get the total number of projects
+    const totalProjects = projects.length;
 
     const goToNextProject = () => {
         let nextId = Number(id) + 1;
-        if (nextId > totalProjects) { // if the next ID is greater than the total number of projects
-            nextId = 1; // wrap around to the first project
+        if (nextId > totalProjects) { 
+            nextId = 1; 
         }
         navigate(`/card/${nextId}`);
+        window.scrollTo(0, 0)
     };
 
     const goToLastProject = () => {
         let nextId = Number(id) - 1;
-        if (nextId < 1) { // if the next ID is less than 1
-            nextId = totalProjects; // wrap around to the last project
+        if (nextId < 1) {
+            nextId = totalProjects; 
         }
         navigate(`/card/${nextId}`);
+        window.scrollTo(0, 0)
     };
 
     return (

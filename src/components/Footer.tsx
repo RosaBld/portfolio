@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export function Footer() {
     const { t } = useTranslation();
 
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div className="font-custom text-xs">
             <div className="gap-4 flex flex-col items-center lg:flex lg:flex-row lg:justify-between pt-28 pb-10 px-24">
@@ -25,19 +29,19 @@ export function Footer() {
             <div className="grid grid-rows-2 justify-items-center gap-4 md:flex md:flex-row md:justify-between pt-10 border-t-4 ">
                 <ul className="xs:grid xs:grid-rows-2 md:flex md:flex-row md:space-x-4 gap-5">
                     <li>
-                        <Link to="/">{t('home')}</Link>
+                        <Link to="/" onClick={handleClick}>{t('home')}</Link>
                     </li>
                     <li>
-                        <Link to="/about">{t('about')}</Link>
+                        <Link to="/about" onClick={handleClick}>{t('about')}</Link>
                     </li>
                     <li>
-                        <Link to="/tech">{t('techstack')}</Link>
+                        <Link to="/tech" onClick={handleClick}>{t('techstack')}</Link>
                     </li>
                     <li>
-                        <Link to="/projects">{t('projects')}</Link>
+                        <Link to="/projects" onClick={handleClick}>{t('projects')}</Link>
                     </li>
                     <li>
-                        <Link to="/contact">{t('contacts')}</Link>
+                        <Link to="/contact" onClick={handleClick}>{t('contacts')}</Link>
                     </li>
                 </ul>
                 <ul>
