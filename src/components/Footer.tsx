@@ -26,8 +26,8 @@ export function Footer() {
                     </a>
                 </div>
             </div>
-            <div className="grid grid-rows-2 justify-items-center gap-4 md:flex md:flex-row md:justify-between pt-10 border-t-4 ">
-                <ul className="xs:grid xs:grid-rows-2 md:flex md:flex-row md:space-x-4 gap-5">
+            <div className="grid grid-cols-2 items-center justify-items-center gap-4 md:flex md:flex-row md:justify-between pt-10 border-t-4 ">
+                <ul className="md:flex md:flex-row md:space-x-4 gap-5">
                     <li>
                         <Link to="/" onClick={handleClick}>{t('home')}</Link>
                     </li>
