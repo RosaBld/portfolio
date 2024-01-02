@@ -4,8 +4,9 @@ import educationData from "../db/education.json";
 import { WorkData, EducationData } from '../types/index.d';
 import { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
+import { darkModeProps } from '../types/index.d'
 
-export function About() {
+export function About({ darkMode }: darkModeProps) {
 
     const { language } = useContext(LanguageContext);
 
@@ -14,21 +15,21 @@ export function About() {
     return (
         <div className="flex flex-col pt-10 text-left font-custom">
             <div className="py-10">
-                <h2 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-relaxed pb-2">
+                <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
                     {t('about_title')}
                 </h2>
-                <p className="text-2xl lg:text-3xl text-justify text-gray-600">
+                <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-2xl lg:text-3xl text-justif`}>
                     {t('about_text')}
                 </p>
             </div>
             <div className="py-10">
-                <h2 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-relaxed">
+                <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
                     {t('work_title')}
                 </h2> 
                 {workData.map((job: WorkData) =>
-                    <div key={job.title[language]} className="border-b-4 border-gray-200 py-8">
+                    <div key={job.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8`}>
                         <div className="flex flex-row justify-between">
-                            <h3 className="text-2xl lg:text-3xl text-gray-600 leading-relaxed pb-2">
+                            <h3 className={`text-2xl lg:text-3xl ${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed pb-2`}>
                                 {job.title[language]}
                             </h3>
                             <p className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-2 pl-5 pr-5 pb-7">
@@ -66,13 +67,13 @@ export function About() {
 
             </div>
             <div className="py-10">
-                <h2 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-relaxed">
+                <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
                     {t('education_title')}
                 </h2>
                 {educationData.map((education: EducationData) =>
-                    <div key={education.title[language]} className="border-b-4 border-gray-200 py-8">
+                    <div key={education.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8`}>
                         <div className="flex flex-row justify-between">
-                            <h3 className="text-2xl lg:text-3xl text-gray-600 leading-relaxed pb-2">
+                            <h3 className={`text-2xl lg:text-3xl ${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed pb-2`}>
                                 {education.title[language]}
                             </h3>
                             <p className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-2 pl-5 pr-5 pb-7">

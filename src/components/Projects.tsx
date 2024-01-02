@@ -4,8 +4,9 @@ import { Project } from '../types/index.d';
 import { Link, useLocation } from 'react-router-dom';
 import React, { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
+import { darkModeProps } from '../types/index.d';
 
-const Projects: React.FC = () => {
+const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
     const { language } = useContext(LanguageContext);
 
     const { t } = useTranslation();
@@ -23,21 +24,21 @@ const Projects: React.FC = () => {
             <div className="pt-10 font-custom">
                 <div className="py-10" >
                     
-                    <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
-                    <p className={`${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
+                    <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
+                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 justify-items-center font-custom">
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
                         <div key={project.id} className="w-60 justify-center">
-                            <div key={t(project.title[language])} className="flex flex-col items-center bg-gray-50 h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105">
+                            <div key={t(project.title[language])} className={`flex flex-col items-center ${darkMode ? 'bg-slate-700' : 'bg-gray-200'} h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105`}>
                                 <Link to={`/Card/${project.id}`} onClick={handleClick}>    
                                     <img src={project.image} className="w-full object-cover h-40 rounded-lg" />
                                     <div className="p-4 text-left w-60">
-                                        <h3 className="font-bold text-xl h-12">{t(project.title[language])}</h3>
-                                        <p className="text-sm pt-4 text-gray-400 h-24">{t(project.preview[language])}</p>
-                                        <p className="text-xs pt-4 h-8">Project Deadline: <span className=" text-gray-600"> {project.deadline} </span></p>
-                                        <p className="text-xs pt-4 h-8">Tech stack:<span className=" text-gray-600"> {project.tech} </span></p>
+                                        <h3 className={`font-bold text-xl h-12 ${darkMode ? 'text-gray-200' : 'text-gray-800'} `}>{t(project.title[language])}</h3>
+                                        <p className={`${darkMode ? 'text-gray-400' : 'text-gray-800'} text-sm pt-4 h-24`}>{t(project.preview[language])}</p>
+                                        <p className={`text-xs pt-4 h-8 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Project Deadline: <span className={`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.deadline} </span></p>
+                                        <p className={`text-xs pt-4 h-8 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Tech stack:<span className= {`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.tech} </span></p>
                                     </div>
                                 </Link>
                                 <div className="flex flex-row w-60 p-4 justify-between text-xs">

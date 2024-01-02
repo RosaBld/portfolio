@@ -1,7 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { darkModeProps } from '../types/index.d';
 
-export function Tech() {
+export function Tech({ darkMode }: darkModeProps) {
     const location = useLocation();
 
     const { t } = useTranslation();
@@ -11,16 +12,16 @@ export function Tech() {
     return (
         <div className="pt-10 font-custom">
             <div className="py-10">
-                <h2 className={`font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>
+                <h2 className={`font-bold py-2 my-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>
                     {t('tech_title')}
                 </h2>
-                <p className={`${isHomePage ? 'text-center text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
+                <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} ${isHomePage ? 'text-center text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
                     {t('tech_text')}
                 </p>
             </div>
 
-            <div className="flex items-center justify-center">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center p-10 gap-10">
+            <div className="flex items-center justify-center font-custom">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center p-10 gap-10">
                     <div className="relative group">
                         <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="p-4">
                             <path d="M22.1325 102.004L13.7062 7.5H106.294L97.8562 101.989L59.9437 112.5L22.1325 102.004Z" fill="#E44F26"/>
@@ -28,7 +29,7 @@ export function Tech() {
                             <path d="M60 50.2763H44.6625L43.605 38.4075H60V26.8163H30.9375L31.215 29.9288L34.0613 61.8675H60V50.2763ZM60 80.3775L59.9475 80.3925L47.04 76.9088L46.215 67.665H34.5787L36.2025 85.86L59.9475 92.4525L60 92.4375V80.3775Z" fill="#EBEBEB"/>
                             <path d="M59.9587 50.2763V61.8675H74.2312L72.8887 76.9013L59.9587 80.3888V92.4488L83.7225 85.86L83.895 83.9025L86.6175 53.3888L86.9025 50.2763H59.9587ZM59.9587 26.8163V38.4075H87.9562L88.1887 35.805L88.7175 29.9288L88.995 26.8163H59.9587Z" fill="white"/>
                         </svg>
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">HTML5</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>HTML5</span>
                     </div>
 
                     <div className="relative group">
@@ -40,7 +41,7 @@ export function Tech() {
                             <path d="M74.3512 60.0615L72.9562 75.4534L60.03 78.9119V90.8714L83.79 84.3412L83.9662 82.4001L85.98 60.0615H74.3512Z" fill="white"/>
                             <path d="M60.0413 25.7895V37.2842H32.0438L31.8113 34.6996L31.2825 28.8724L31.005 25.7895H60.0413ZM60 49.054V60.5487H47.2538L47.0213 57.9641L46.4963 52.1369L46.2188 49.054H60Z" fill="#EBEBEB"/>
                         </svg>
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">CSS3</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>CSS3</span>
                     </div>     
 
                     <div className="relative group">
@@ -54,12 +55,12 @@ export function Tech() {
                             </clipPath>
                             </defs>
                         </svg>
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">SASS</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>SASS</span>
                     </div>
 
-                    <div className="relative group">
-                        <img src="./icons/php.png" alt="php" className="size-28 p-4" /> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">PHP</span>
+                    <div className="relative group min-w-[100px] min-h-[100px]">
+                        <img src="./icons/php.png" alt="php" className="w-28 object-cover p-4" /> 
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>PHP</span>
                     </div>
 
                     <div className="relative group">
@@ -67,7 +68,7 @@ export function Tech() {
                             <path d="M7.5 7.5H112.5V112.5H7.5V7.5Z" fill="#F5DE19"/>
                             <path d="M78.0337 89.5312C78.9284 91.3485 80.3183 92.8759 82.0434 93.9375C83.7684 94.9991 85.7583 95.5515 87.7837 95.5313C91.8712 95.5313 94.485 93.4875 94.485 90.6562C94.485 87.2812 91.8 86.0738 87.3 84.105L84.8325 83.0475C77.7075 80.0138 72.9825 76.215 72.9825 68.1825C72.9825 60.7838 78.6075 55.1475 87.4312 55.1475C90.2876 54.9412 93.1415 55.5805 95.637 56.9856C98.1324 58.3907 100.159 60.4994 101.464 63.0488L93.75 67.98C93.2476 66.716 92.3728 65.6345 91.2416 64.879C90.1104 64.1236 88.7763 63.7298 87.4162 63.75C86.8228 63.6906 86.2236 63.7555 85.6566 63.9404C85.0897 64.1254 84.5675 64.4265 84.1233 64.8244C83.6792 65.2224 83.3228 65.7085 83.0768 66.2518C82.8309 66.7951 82.7009 67.3837 82.695 67.98C82.695 70.9388 84.5287 72.1388 88.7625 73.98L91.23 75.0375C99.615 78.6338 104.355 82.2975 104.355 90.5363C104.355 99.42 97.3762 104.287 88.005 104.287C84.3536 104.52 80.713 103.691 77.5223 101.901C74.3317 100.11 71.7274 97.4342 70.0237 94.1963L78.0337 89.5312ZM43.1775 90.3863C44.7262 93.135 46.1362 95.46 49.5262 95.46C52.7662 95.46 54.8137 94.1925 54.8137 89.2612V55.71H64.68V89.3925C64.68 99.6075 58.68 104.257 49.9462 104.257C46.8591 104.426 43.7931 103.657 41.1513 102.051C38.5096 100.444 36.4157 98.0761 35.145 95.2575L43.1775 90.3863Z" fill="black"/>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">JavaScript</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>JavaScript</span>
                     </div>
 
                     <div className="relative group">
@@ -81,24 +82,24 @@ export function Tech() {
                             </clipPath>
                             </defs>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">React</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>React</span>
                     </div>
 
-                    <div className="relative group">
-                        <img src="./icons/vite.jpeg" alt="vitejs" className="size-28 p-4" />
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">Vite.JS</span>
+                    <div className="relative group min-w-[100px] min-h-[100px]">
+                        <img src="./icons/vite.jpeg" alt="vitejs" className="w-28 object-cover p-4" />
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>Vite.JS</span>
                     </div>
 
-                    <div className="relative group">
-                        <img src="./icons/ts.png" alt="typescript" className="size-24 p-4" />
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">Typescript</span>
+                    <div className="relative group min-w-[100px] min-h-[100px]">
+                        <img src="./icons/ts.png" alt="typescript" className="w-28 object-cover p-4" />
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>Typescript</span>
                     </div>
 
                     <div className="relative group">
                         <svg width="131" height="100%" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg" className="p-4">
                             <path d="M36.8438 56.0844C40.6646 40.801 50.2167 33.1594 65.5 33.1594C88.425 33.1594 91.2906 50.3531 102.753 53.2187C110.395 55.1292 117.081 52.2635 122.812 44.6219C118.992 59.9052 109.44 67.5469 94.1562 67.5469C71.2313 67.5469 68.3656 50.3531 56.9031 47.4875C49.2615 45.5771 42.575 48.4427 36.8438 56.0844ZM8.1875 90.4719C12.0083 75.1885 21.5604 67.5469 36.8438 67.5469C59.7687 67.5469 62.6344 84.7406 74.0969 87.6062C81.7385 89.5167 88.425 86.651 94.1562 79.0094C90.3354 94.2927 80.7833 101.934 65.5 101.934C42.575 101.934 39.7094 84.7406 28.2469 81.875C20.6052 79.9646 13.9187 82.8302 8.1875 90.4719Z" fill="#44A8B3"/>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">Tailwind</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>Tailwind</span>
                     </div>
 
                     <div className="relative group">
@@ -112,7 +113,7 @@ export function Tech() {
                             </clipPath>
                             </defs>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">Git</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>Git</span>
                     </div>
 
                     <div className="relative group">
@@ -121,14 +122,14 @@ export function Tech() {
                             <path d="M101.535 94.395L81.354 104.115C80.214 104.662 78.932 104.843 77.685 104.631C76.438 104.419 75.2875 103.825 74.3925 102.932L8.33 42.7C7.52847 41.9727 7.04868 40.9568 6.99617 39.8758C6.94366 38.7947 7.32273 37.7371 8.05 36.9355C8.1375 36.841 8.225 36.75 8.3195 36.666L13.713 31.766C14.4185 31.1219 15.3277 30.7459 16.2821 30.7037C17.2365 30.6615 18.1754 30.9557 18.935 31.535L98.497 91.875C99.098 92.3311 99.8144 92.6104 100.566 92.6814C101.317 92.7524 102.073 92.6123 102.749 92.2769C103.424 91.9415 103.993 91.4242 104.391 90.783C104.789 90.1419 105 89.4025 105 88.648V88.9C104.996 90.0488 104.669 91.1733 104.057 92.1451C103.444 93.1168 102.57 93.8965 101.535 94.395Z" fill="#007ACC"/>
                             <path d="M81.354 104.115C80.214 104.662 78.9319 104.843 77.685 104.631C76.438 104.419 75.2875 103.825 74.3925 102.932C74.8951 103.428 75.533 103.764 76.2261 103.899C76.9192 104.034 77.6368 103.962 78.289 103.691C78.9411 103.42 79.4988 102.963 79.8921 102.376C80.2854 101.79 80.4969 101.1 80.5 100.394V11.606C80.5006 10.8965 80.2906 10.2028 79.8966 9.61277C79.5026 9.02274 78.9423 8.56291 78.2868 8.29155C77.6313 8.02019 76.9099 7.9495 76.2142 8.08843C75.5184 8.22737 74.8795 8.56968 74.3785 9.072C75.2728 8.1772 76.4231 7.58239 77.6702 7.36983C78.9174 7.15727 80.1997 7.33747 81.34 7.8855L101.517 17.5875C102.559 18.0845 103.438 18.8658 104.054 19.8412C104.671 20.8165 104.998 21.9463 105 23.1V88.9C105 90.0528 104.675 91.1823 104.061 92.1582C103.448 93.1341 102.571 93.9168 101.531 94.416L81.354 104.115Z" fill="#1F9CF0"/>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">Visual Studio Code</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>Visual Studio Code</span>
                     </div>
 
                     <div className="relative group">
                         <svg width="88" height="100%" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" className="p-4">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M44 0C19.69 0 0 19.69 0 44C0 63.47 12.595 79.915 30.085 85.745C32.285 86.13 33.11 84.81 33.11 83.655C33.11 82.61 33.055 79.145 33.055 75.46C22 77.495 19.14 72.765 18.26 70.29C17.765 69.025 15.62 65.12 13.75 64.075C12.21 63.25 10.01 61.215 13.695 61.16C17.16 61.105 19.635 64.35 20.46 65.67C24.42 72.325 30.745 70.455 33.275 69.3C33.66 66.44 34.815 64.515 36.08 63.415C26.29 62.315 16.06 58.52 16.06 41.69C16.06 36.905 17.765 32.945 20.57 29.865C20.13 28.765 18.59 24.255 21.01 18.205C21.01 18.205 24.695 17.05 33.11 22.715C36.63 21.725 40.37 21.23 44.11 21.23C47.85 21.23 51.59 21.725 55.11 22.715C63.525 16.995 67.21 18.205 67.21 18.205C69.63 24.255 68.09 28.765 67.65 29.865C70.455 32.945 72.16 36.85 72.16 41.69C72.16 58.575 61.875 62.315 52.085 63.415C53.68 64.79 55.055 67.43 55.055 71.555C55.055 77.44 55 82.17 55 83.655C55 84.81 55.825 86.185 58.025 85.745C66.7597 82.796 74.3497 77.1822 79.7268 69.6937C85.1039 62.2052 87.9974 53.219 88 44C88 19.69 68.31 0 44 0Z" fill="black"/>
+                            <path className={darkMode ? 'fill-current text-white' : 'fill-current text-black'} fillRule="evenodd" clipRule="evenodd" d="M44 0C19.69 0 0 19.69 0 44C0 63.47 12.595 79.915 30.085 85.745C32.285 86.13 33.11 84.81 33.11 83.655C33.11 82.61 33.055 79.145 33.055 75.46C22 77.495 19.14 72.765 18.26 70.29C17.765 69.025 15.62 65.12 13.75 64.075C12.21 63.25 10.01 61.215 13.695 61.16C17.16 61.105 19.635 64.35 20.46 65.67C24.42 72.325 30.745 70.455 33.275 69.3C33.66 66.44 34.815 64.515 36.08 63.415C26.29 62.315 16.06 58.52 16.06 41.69C16.06 36.905 17.765 32.945 20.57 29.865C20.13 28.765 18.59 24.255 21.01 18.205C21.01 18.205 24.695 17.05 33.11 22.715C36.63 21.725 40.37 21.23 44.11 21.23C47.85 21.23 51.59 21.725 55.11 22.715C63.525 16.995 67.21 18.205 67.21 18.205C69.63 24.255 68.09 28.765 67.65 29.865C70.455 32.945 72.16 36.85 72.16 41.69C72.16 58.575 61.875 62.315 52.085 63.415C53.68 64.79 55.055 67.43 55.055 71.555C55.055 77.44 55 82.17 55 83.655C55 84.81 55.825 86.185 58.025 85.745C66.7597 82.796 74.3497 77.1822 79.7268 69.6937C85.1039 62.2052 87.9974 53.219 88 44C88 19.69 68.31 0 44 0Z" fill="black"/>
                         </svg> 
-                        <span className="hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs">GitHub</span>
+                        <span className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} hidden group-hover:block absolute top-0 left-0 bg-transparent text-black p-1 text-xs`}>GitHub</span>
                     </div>
                 </div>
             </div>

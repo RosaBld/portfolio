@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react';
+
 interface Translation {
     [key: string]: string;
     en: string;
@@ -32,3 +34,12 @@ export type EducationData = {
     place: string,
     date: Translation,
 }
+
+export type darkModeProps = {
+    darkMode: boolean;
+};
+
+export type DarkLightProps = {
+    darkMode: boolean;
+    setDarkMode: Dispatch<SetStateAction<boolean>>;
+};

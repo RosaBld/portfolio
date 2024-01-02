@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { LanguageSwitch } from "./LanguageSwitch";
 import { useTranslation } from 'react-i18next';
 
-
 export function Header() {
     const { t } = useTranslation();
 
@@ -22,11 +21,11 @@ export function Header() {
       };
 
     return (
-        <div className="flex flex-row justify-between h-20 p-5 font-custom gap-8">
+        <div className="flex flex-row justify-between h-28 p-5 pb-10 font-custom gap-8">
             <button onClick={toggleSidebar} className="rounded-md px-4 py-2 bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-125 lg:hidden">
                 {isOpen ? 'Menu' : 'Menu'}
             </button>
-            <div className={`fixed top-16 left-2 w-auto h-full bg-transparent lg:static lg:bg-transparent ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center`}>
+            <div className={`fixed top-16 left-2 w-auto h-full bg-transparent lg:static lg:bg-transparent ${isOpen ? 'block opacity-100' : 'opacity-0'} lg:opacity-100 lg:flex lg:items-center transition-all duration-500 lg:animate-none ${isOpen ? 'animate-slide-in' : 'animate-slide-out'}`}>
                 <ul className={`flex flex-col gap-12 items-center lg:flex-row lg:gap-20`}>
                     <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('home')}</Link>
