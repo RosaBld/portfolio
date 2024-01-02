@@ -14,7 +14,6 @@ export function Contact() {
                 <div style={{ overflowWrap: 'break-word', wordWrap: 'break-word' }}>
                     <span style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> rosalie.boulard@gmail.com </span>
                 </div>
-                {t('contact3')}
             </h2>
         </div>
     )

@@ -41,7 +41,7 @@ export function Header() {
                         <Link to="/projects" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('projects')}</Link>
                     </li>
                     <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
-                        <Link to="/contact" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('contacts')}</Link>
+                        <Link to="/contact" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('Contact')}</Link>
                     </li>
                     <li>
                         <a href="https://github.com/RosaBld" target="_blank" rel="noopener noreferrer">

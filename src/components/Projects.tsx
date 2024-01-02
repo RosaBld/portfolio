@@ -13,6 +13,10 @@ const Projects: React.FC = () => {
     const location = useLocation();
 
     const isHomePage = location.pathname === '/';
+
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
     
     return (
         <>
@@ -27,7 +31,7 @@ const Projects: React.FC = () => {
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
                         <div key={project.id} className="w-60 justify-center">
                             <div key={t(project.title[language])} className="flex flex-col items-center bg-gray-50 h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105">
-                                <Link to={`/Card/${project.id}`}>    
+                                <Link to={`/Card/${project.id}`} onClick={handleClick}>    
                                     <img src={project.image} className="w-full object-cover h-40 rounded-lg" />
                                     <div className="p-4 text-left w-60">
                                         <h3 className="font-bold text-xl h-12">{t(project.title[language])}</h3>
