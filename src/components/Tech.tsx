@@ -20,7 +20,7 @@ export function Tech() {
             </div>
 
             <div className="flex items-center justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center items-center p-10 gap-10">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center p-10 gap-10">
                     <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="p-4">
                         <path d="M22.1325 102.004L13.7062 7.5H106.294L97.8562 101.989L59.9437 112.5L22.1325 102.004Z" fill="#E44F26"/>
                         <path d="M60 104.467L90.6375 95.9737L97.845 15.2287H60V104.467Z" fill="#F1662A"/>
