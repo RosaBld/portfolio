@@ -9,6 +9,7 @@ export function Header() {
 
     const handleClick = () => {
         window.scrollTo(0, 0);
+        setIsOpen(false);
     };
 
     const [isHovered1, setIsHovered1] = useState(false);
@@ -17,7 +18,7 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prevState => !prevState);
       };
 
     return (
@@ -27,19 +28,19 @@ export function Header() {
             </button>
             <div className={`fixed top-16 left-2 w-auto h-full bg-transparent lg:static lg:bg-transparent ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center`}>
                 <ul className={`flex flex-col gap-12 items-center lg:flex-row lg:gap-20`}>
-                    <li className="transform transition-transform duration-500 hover:scale-150">
+                    <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('home')}</Link>
                     </li>
-                    <li className="transform transition-transform duration-500 hover:scale-150">
+                    <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/about" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('about')}</Link>
                     </li>
-                    <li className="transform transition-transform duration-500 hover:scale-150">
+                    <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/tech" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('techstack')}</Link>
                     </li>
-                    <li className="transform transition-transform duration-500 hover:scale-150">
+                    <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/projects" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('projects')}</Link>
                     </li>
-                    <li className="transform transition-transform duration-500 hover:scale-150">
+                    <li className="text-sm transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150">
                         <Link to="/contact" onClick={handleClick} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('contacts')}</Link>
                     </li>
                     <li>
