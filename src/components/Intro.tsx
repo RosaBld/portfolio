@@ -23,7 +23,7 @@ export function Intro({ darkMode }: darkModeProps) {
                 </div>
                 <div className="relative rounded-full overflow-hidden p-3">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-t from-violet to-fuchsia z-0"></div>
-                    <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-44 z-10"/>
+                    <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-56 z-10"/>
                 </div>
             </div>
             <div className="justify-center pt-8 lg:flex lg:justify-end lg:pt-16">

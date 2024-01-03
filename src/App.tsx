@@ -25,7 +25,7 @@ function App() {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <div className={`flex justify-between items-center lg:border-b-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+      <div className={`flex w-full justify-between items-center lg:border-b-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
         <Header />
         <DarkLight darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
