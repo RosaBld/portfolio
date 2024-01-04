@@ -43,7 +43,7 @@ function App() {
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <div className={`fixed top-0 left-0 right-0 h-28 z-50 flex justify-between items-center px-0 lg:px-10`}>
         <div className={`flex justify-between w-full lg:border-b-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'}`}>
-          <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+          <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} darkMode={darkMode} />
           <DarkLight darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>

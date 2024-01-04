@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
+export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen, darkMode }) => {
     const { t } = useTranslation();
     
     const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen 
                         <button onClick={toggleSidebar} className="absolute top-0 right-0 m-2 lg:hidden">
                             <FontAwesomeIcon icon={faXmark} style={{color: "white"}} />
                         </button>
-                        <ul className={`flex flex-col gap-12 items-center rounded-md px-6 py-8 lg:flex-row lg:gap-8 bg-slate-100 sm:bg-gradient-to-b sm:from-violet sm:to-fuchsia lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100`}>                            
+                        <ul className={`flex flex-col gap-12 items-center rounded-md px-6 py-8 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} sm:bg-gradient-to-b sm:from-violet sm:to-fuchsia lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100`}>                            
                             <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-blue lg:bg-gradient-to-b lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('home')}</Link>
                             </li>

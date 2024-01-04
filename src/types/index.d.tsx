@@ -48,4 +48,5 @@ export type DarkLightProps = {
 export interface HeaderProps {
     isSidebarOpen: boolean;
     setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+    darkMode: boolean;
 }
