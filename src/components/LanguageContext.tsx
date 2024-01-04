@@ -1,8 +1,8 @@
 import { createContext, Dispatch, SetStateAction } from 'react';
 
-interface LanguageContextType {
-  language: string;
-  setLanguage: Dispatch<SetStateAction<string>>;
+export interface LanguageContextType {
+  language: 'en' | 'fr';
+  setLanguage: Dispatch<SetStateAction<'en' | 'fr'>>;
 }
 
 export const LanguageContext = createContext<LanguageContextType>({

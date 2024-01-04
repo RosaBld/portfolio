@@ -23,7 +23,6 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
         <>
             <div className="pt-10 font-custom">
                 <div className="py-10" >
-                    
                     <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
                     <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
                 </div>
@@ -32,8 +31,8 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
                         <div key={project.id} className="w-60 justify-center">
                             <div key={t(project.title[language])} className={`flex flex-col items-center ${darkMode ? 'bg-slate-700' : 'bg-gray-200'} h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105`}>
-                                <Link to={`/Card/${project.id}`} onClick={handleClick}>    
-                                    <img src={project.image} className="w-full object-cover h-40 rounded-lg" />
+                                <Link to={`/Card/${project.slug}`} onClick={handleClick}>    
+                                    <img src={project.image} className="w-full object-cover h-40 rounded-t-lg" />
                                     <div className="p-4 text-left w-60">
                                         <h3 className={`font-bold text-xl h-12 ${darkMode ? 'text-gray-200' : 'text-gray-800'} `}>{t(project.title[language])}</h3>
                                         <p className={`${darkMode ? 'text-gray-400' : 'text-gray-800'} text-sm pt-4 h-24`}>{t(project.preview[language])}</p>

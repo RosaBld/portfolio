@@ -1,23 +1,24 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../db/projects.json';
-import { Project } from '../types/index.d';
 import { LanguageContext } from './LanguageContext';
 import { Back, BackNext } from './Buttons';
 import { darkModeProps } from '../types/index.d';
+import { LanguageContextType } from './LanguageContext';
+
 
 const Card: React.FC<darkModeProps> = ({ darkMode })=> {
-    const { id } = useParams<{ id: string }>();
-    const project: Project | undefined = data.find((project: Project) => project.id === Number(id));
+    const { slug } = useParams();
+    const project = data.find(project => project.slug === slug);
 
-    const { language } = useContext(LanguageContext);
+    const { language } = useContext<LanguageContextType>(LanguageContext);
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
     return (
-        <div>
+        <div className="pt-10">
             <Back darkMode={darkMode} />
             <div className="py-12 font-custom">
                 <div className="text-left">

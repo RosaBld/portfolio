@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "slug": "the-weather-app",
         "image": "/screen/home/weatherApp.png",
         "title": {
             "en": "The weather App",
@@ -22,6 +23,7 @@
     },
     {
         "id": 2,
+        "slug": "az-store",
         "image": "/screen/home/azstore.png",
         "title": {
             "en": "AZ-Store",
@@ -44,6 +46,7 @@
 
     {
         "id": 3,
+        "slug": "pokedex",
         "image": "/screen/home/pokedex.png",
         "title": {
             "en": "Pokedex",
@@ -66,6 +69,7 @@
 
     {
         "id": 4,
+        "slug": "tmdb",
         "image": "/screen/home/movie.png",
         "title": {
             "en": "The Movie Browser App",
@@ -87,7 +91,8 @@
     },
 
     {
-        "id": 5,  
+        "id": 5,
+        "slug": "COGIP",  
         "image": "/screen/home/cogip.png",
         "title": {
             "en": "COGIP",
@@ -109,7 +114,8 @@
     },
 
     {
-        "id": 6,  
+        "id": 6,
+        "slug": "portfolio",  
         "image": "/screen/home/portfolio.png",
         "title": {
             "en": "Portfolio",

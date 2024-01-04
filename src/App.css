@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   text-align: center;
+  position: relative;
+  place-items: center;
 }
 
 body {
-  background-color: rgb(241, 241, 241);
-  
+  background-color: rgb(241 245 249);
 }
 
 .dark body {
-  background-color: #1a1a1b;
-  
+  background-color: rgb(15 23 42);
 }

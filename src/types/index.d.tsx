@@ -8,6 +8,7 @@ interface Translation {
 
 export type Project = {
     id: number;
+    slug: string;
     image: string;
     title: Translation;
     preview: Translation;
