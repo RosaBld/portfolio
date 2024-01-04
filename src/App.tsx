@@ -12,6 +12,7 @@ import { Footer } from './components/Footer';
 import { LanguageContext } from './components/LanguageContext';
 import Card from './components/Card';
 import { DarkLight } from './components/DarkLight';
+import { animated, useSpring } from 'react-spring';
 
 function App() {
   const storedLanguage = localStorage.getItem('language');
@@ -31,23 +32,32 @@ function App() {
     localStorage.setItem('darkMode', darkMode.toString());
   }, [darkMode]);
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const contentStyle = useSpring({
+    transform: isSidebarOpen ? 'translateX(50px)' : 'translateX(0px)',
+    config: { duration: 500 }
+  });
+
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <div className={`fixed top-0 left-0 right-0 h-28 z-50 flex justify-between items-center px-20`}>
+      <div className={`fixed top-0 left-0 right-0 h-28 z-50 flex justify-between items-center px-0 lg:px-10`}>
         <div className={`flex justify-between w-full lg:border-b-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'}`}>
-          <Header />
+          <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
           <DarkLight darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>
-      <Routes>
-        <Route path="/" element={<Home darkMode={darkMode} />} />
-        <Route path="/about" element={<About darkMode={darkMode} />} />
-        <Route path="/tech" element={<Tech darkMode={darkMode} />} />
-        <Route path="/projects" element={<Projects darkMode={darkMode} />} />
-        <Route path="/contact" element={<Contact darkMode={darkMode} />} />
-        <Route path="/project/:slug" element={<Card darkMode={darkMode} />} />
-      </Routes>
-      <Footer darkMode={darkMode} />
+      <animated.div style={contentStyle}>
+        <Routes>
+          <Route path="/" element={<Home darkMode={darkMode} />} />
+          <Route path="/about" element={<About darkMode={darkMode} />} />
+          <Route path="/tech" element={<Tech darkMode={darkMode} />} />
+          <Route path="/projects" element={<Projects darkMode={darkMode} />} />
+          <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+          <Route path="/project/:slug" element={<Card darkMode={darkMode} />} />
+        </Routes>
+        <Footer darkMode={darkMode} />
+      </animated.div>
     </LanguageContext.Provider>
   );
 }
