@@ -37,7 +37,7 @@ function App() {
         <Route path="/tech" element={<Tech darkMode={darkMode} />} />
         <Route path="/projects" element={<Projects darkMode={darkMode} />} />
         <Route path="/contact" element={<Contact darkMode={darkMode} />} />
-        <Route path="/card/:slug" element={<Card darkMode={darkMode} />} />
+        <Route path="/project/:slug" element={<Card darkMode={darkMode} />} />
       </Routes>
       <Footer darkMode={darkMode} />
     </LanguageContext.Provider>

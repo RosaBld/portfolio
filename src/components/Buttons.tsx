@@ -23,25 +23,29 @@ export function Back({ darkMode }: darkModeProps) {
 
 export function BackNext() {
     const { t } = useTranslation();
-    const { id } = useParams<{ id: string }>();
+    const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
     const totalProjects = projects.length;
 
+    const currentProjectIndex = projects.findIndex(project => project.slug === slug);
+
     const goToNextProject = () => {
-        let nextId = Number(id) + 1;
-        if (nextId > totalProjects) { 
-            nextId = 1; 
+        let nextIndex = currentProjectIndex + 1;
+        if (nextIndex >= totalProjects) { 
+            nextIndex = 0; 
         }
-        navigate(`/card/${nextId}`);
+        const nextSlug = projects[nextIndex].slug;
+        navigate(`/project/${nextSlug}`);
         window.scrollTo(0, 0)
     };
 
     const goToLastProject = () => {
-        let nextId = Number(id) - 1;
-        if (nextId < 1) {
-            nextId = totalProjects; 
+        let lastIndex = currentProjectIndex - 1;
+        if (lastIndex < 0) {
+            lastIndex = totalProjects - 1; 
         }
-        navigate(`/card/${nextId}`);
+        const lastSlug = projects[lastIndex].slug;
+        navigate(`/project/${lastSlug}`);
         window.scrollTo(0, 0)
     };
 

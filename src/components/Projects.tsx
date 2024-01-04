@@ -31,7 +31,7 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
                         <div key={project.id} className="w-60 justify-center">
                             <div key={t(project.title[language])} className={`flex flex-col items-center ${darkMode ? 'bg-slate-700' : 'bg-gray-200'} h-auto w-60 rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105`}>
-                                <Link to={`/Card/${project.slug}`} onClick={handleClick}>    
+                                <Link to={`/project/${project.slug}`} onClick={handleClick}>    
                                     <img src={project.image} className="w-full object-cover h-40 rounded-t-lg" />
                                     <div className="p-4 text-left w-60">
                                         <h3 className={`font-bold text-xl h-12 ${darkMode ? 'text-gray-200' : 'text-gray-800'} `}>{t(project.title[language])}</h3>

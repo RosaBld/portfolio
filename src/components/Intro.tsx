@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { darkModeProps } from '../types/index.d';
 
 export function Intro({ darkMode }: darkModeProps) {
@@ -25,9 +23,6 @@ export function Intro({ darkMode }: darkModeProps) {
                     <div className="absolute inset-0 rounded-full bg-gradient-to-t from-violet to-fuchsia z-0"></div>
                     <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-56 z-10"/>
                 </div>
-            </div>
-            <div className="justify-center pt-8 lg:flex lg:justify-end lg:pt-16">
-                <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20" style={{color: "fuchsia"}} />
             </div>
         </div>
     )
