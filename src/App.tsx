@@ -14,14 +14,22 @@ import Card from './components/Card';
 import { DarkLight } from './components/DarkLight';
 
 function App() {
-  const [language, setLanguage] = useState<'en' | 'fr'>('en');
-  const { i18n } = useTranslation();
+  const storedLanguage = localStorage.getItem('language');
+  const storedMode = localStorage.getItem('darkMode');
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [language, setLanguage] = useState<'en' | 'fr'>(storedLanguage ? storedLanguage as 'en' | 'fr' : 'en');
+  const [darkMode, setDarkMode] = useState(storedMode === 'true');
+
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     i18n.changeLanguage(language);
+    localStorage.setItem('language', language);
   }, [language, i18n]);
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode.toString());
+  }, [darkMode]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

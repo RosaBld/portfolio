@@ -21,7 +21,7 @@ export function Header() {
       };
 
     return (
-        <div className="flex justify-between w-full flex-row h-28 p-5 pb-10 font-custom lg:gap-20 xl:gap-36 lg:items-center">
+        <div className="flex justify-between w-full flex-row h-28 p-5 pb-10 font-custom lg:gap-20 xl:gap-36 lg:pt-12 lg:items-center">
             <button onClick={toggleSidebar} className="rounded-md px-4 py-2 bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-125 lg:hidden">
                 {isOpen ? 'Menu' : 'Menu'}
             </button>

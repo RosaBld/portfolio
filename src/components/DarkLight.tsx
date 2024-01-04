@@ -18,7 +18,7 @@ export function DarkLight({ darkMode, setDarkMode }: DarkLightProps) {
     }, [darkMode])
 
     return (
-        <div className="h-20 p-9 pb-9 gap-8">
+        <div className="h-20 p-9 lg:p-12 pb-9 gap-8">
             <button onClick={toggleDarkMode}>
                 <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className={`size-6 ${darkMode ? 'text-fuchsia-500' : 'text-blue-600'}`} />
             </button>

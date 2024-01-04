@@ -21,9 +21,9 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
     
     return (
         <>
-            <div className="pt-10 font-custom">
+            <div className={`${isHomePage ? `pt-16` : 'pt-10'}`}>
                 <div className="py-10" >
-                    <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
+                    <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
                     <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
                 </div>
 

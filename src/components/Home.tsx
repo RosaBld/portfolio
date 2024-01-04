@@ -29,9 +29,9 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={introRef}>
                 <Intro darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-8 lg:justify-end lg:pt-16">
+            <div className="justify-center pt-8 lg:justify-end lg:pt-36">
                 <button onClick={scrollToTech}>
-                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
                 </button>
             </div>
             <div ref={techRef}>
@@ -39,7 +39,7 @@ export function Home({ darkMode }: darkModeProps) {
             </div>
             <div className="justify-center pt-8 lg:justify-end lg:pt-12">
                 <button onClick={scrollToProjects}>
-                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
                 </button>
             </div>
             <div ref={projectsRef}>
@@ -47,7 +47,7 @@ export function Home({ darkMode }: darkModeProps) {
             </div>
             <div className="justify-center pt-8 lg:flex lg:justify-end lg:pt-12">
                 <button onClick={scrollToIntro}>
-                    <FontAwesomeIcon icon={faArrowCircleUp} className="animate-beat size-20" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleUp} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
                 </button>
             </div>
         </>

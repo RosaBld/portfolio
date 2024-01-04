@@ -15,7 +15,7 @@ export function About({ darkMode }: darkModeProps) {
     return (
         <div className="flex flex-col pt-10 text-left font-custom">
             <div className="py-10">
-                <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
+                <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} py-2 my-2 text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
                     {t('about_title')}
                 </h2>
                 <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-2xl lg:text-3xl text-justif`}>

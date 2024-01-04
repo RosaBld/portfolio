@@ -10,9 +10,9 @@ export function Tech({ darkMode }: darkModeProps) {
     const isHomePage = location.pathname === '/';
 
     return (
-        <div className="pt-10 font-custom">
+        <div className={`${isHomePage ? `pt-16` : 'pt-10'}`}>
             <div className="py-10">
-                <h2 className={`font-bold py-2 my-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${isHomePage ? 'text-center text-4xl' : 'text-left text-4xl lg:text-6xl'}`}>
+                <h2 className={`font-bold py-2 my-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${isHomePage ? 'text-center text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>
                     {t('tech_title')}
                 </h2>
                 <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} ${isHomePage ? 'text-center text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
