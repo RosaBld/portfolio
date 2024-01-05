@@ -38,9 +38,9 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
     }, [isLargeScreen, isSidebarOpen]);
     
     const sidebarStyle = useSpring({
-        transform: isLargeScreen ? 'translateX(0)' : isSidebarOpenOnLargeScreen ? 'translateX(0)' : 'translateX(-120%)', 
+        transform: isLargeScreen ? 'translateX(0)' : isSidebarOpenOnLargeScreen ? 'translateY(0)' : 'translateY(-100%)', 
         opacity: isLargeScreen ? 1 : isSidebarOpenOnLargeScreen ? 1 : 0,
-        config: { duration: 500 }
+        config: { duration: 700 }
     });
 
     return (
@@ -48,25 +48,25 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
             <button onClick={toggleSidebar} className={`rounded-md px-4 py-2 bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-200 lg:hidden ${isSidebarOpen ? 'hidden' : ''}`}>
                 {isOpen ? 'Menu' : 'Menu'}
             </button>
-                <animated.div style={sidebarStyle} className={`flex top-8 left-2 w-auto h-fit lg:static lg:transform-none lg:opacity-100 lg:flex lg:animate-none ${isSidebarOpen ? '' : 'hidden'}`}>
+                <animated.div style={sidebarStyle} className={`flex top-8 left-2 h-fit lg:static lg:transform-none lg:opacity-100 lg:flex lg:animate-none ${isSidebarOpen ? '' : 'hidden'}`}>
                     <div>
                         <button onClick={toggleSidebar} className="absolute top-0 right-0 m-2 lg:hidden">
                             <FontAwesomeIcon icon={faXmark} style={{color: "white"}} />
                         </button>
-                        <ul className={`flex flex-col gap-12 items-center rounded-md px-6 py-8 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} sm:bg-gradient-to-b sm:from-violet sm:to-fuchsia lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100`}>                            
-                            <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
+                        <ul className={`flex flex-col gap-12 items-center rounded-md lg:px-6 px-2 lg:py-8 py-2 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} bg-gradient-to-b from-violet to-fuchsia`}>                            
+                            <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-blue lg:bg-gradient-to-b lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('home')}</Link>
                             </li>
-                            <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
+                            <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/about" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-cyan lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('about')}</Link>
                             </li>
-                            <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-24">
+                            <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-24">
                                 <Link to="/tech" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('techstack')}</Link>
                             </li>
-                            <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
+                            <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/projects" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('projects')}</Link>
                             </li>
-                            <li className="text-lg transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
+                            <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/contact" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('Contact')}</Link>
                             </li>
                             <li>
