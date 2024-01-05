@@ -59,7 +59,7 @@ const Card: React.FC<darkModeProps> = ({ darkMode })=> {
                 </div>
                 
             </div>
-            <BackNext />
+            <BackNext darkMode={darkMode} />
         </div>
     );
 };
