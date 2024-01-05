@@ -13,6 +13,7 @@ import { LanguageContext } from './components/LanguageContext';
 import Card from './components/Card';
 import { DarkLight } from './components/DarkLight';
 import { animated, useSpring } from 'react-spring';
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const storedLanguage = localStorage.getItem('language');
@@ -34,8 +35,10 @@ function App() {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+
   const contentStyle = useSpring({
-    transform: isSidebarOpen ? 'translateX(50px)' : 'translateX(0px)',
+    transform: isLargeScreen ? 'translateX(0)' : isSidebarOpen ? 'translateX(50px)' : 'translateX(0px)',
     config: { duration: 500 }
   });
 
