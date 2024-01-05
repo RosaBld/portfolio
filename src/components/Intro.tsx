@@ -11,7 +11,7 @@ export function Intro({ darkMode }: darkModeProps) {
 
     return (
         <div>
-            <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-28 lg:pt-44 pb-8">
+            <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-28 lg:pt-36 pb-8">
                 <div className="max-w-xl">
                     <h1 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-4xl lg:text-6xl uppercase font-bold text-left font-custom lg:animate-slide-in`}>
                         {t('intro_greeting')} 

@@ -12,8 +12,8 @@ import { Footer } from './components/Footer';
 import { LanguageContext } from './components/LanguageContext';
 import Card from './components/Card';
 import { DarkLight } from './components/DarkLight';
-import { animated, useSpring } from 'react-spring';
-import { useMediaQuery } from 'react-responsive';
+// import { animated, useSpring } from 'react-spring';
+// import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const storedLanguage = localStorage.getItem('language');
@@ -47,22 +47,22 @@ function App() {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+  // const isLargeScreen = useMediaQuery({ minWidth: 1024 });
 
-  const contentStyle = useSpring({
-    transform: isLargeScreen ? 'translateX(0)' : isSidebarOpen ? 'translateY(320px)' : 'translateY(0px)',
-    config: { duration: 700 }
-  });
+  // const contentStyle = useSpring({
+  //   transform: isLargeScreen ? 'translateX(0)' : isSidebarOpen ? 'translateY(320px)' : 'translateY(0px)',
+  //   config: { duration: 700 }
+  // });
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <div className={`${isSidebarOpen ? 'absolute' : 'fixed'} top-0 left-0 right-0 h-28 z-50 flex justify-between items-center px-0 lg:px-10`}>
+      <div className={`${isSidebarOpen ? 'fixed' : 'fixed'} top-0 left-0 right-0 h-28 z-50 flex justify-between items-center px-0 lg:px-10`}>
         <div className={`flex justify-between w-full lg:border-b-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'}`}>
           <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} darkMode={darkMode} />
           <DarkLight darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>
-      <animated.div style={contentStyle}>
+      {/* <animated.div style={contentStyle}> */}
         <Routes>
           <Route path="/" element={<Home darkMode={darkMode} />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />
@@ -72,7 +72,7 @@ function App() {
           <Route path="/project/:slug" element={<Card darkMode={darkMode} />} />
         </Routes>
         <Footer darkMode={darkMode} />
-      </animated.div>
+      {/* </animated.div> */}
     </LanguageContext.Provider>
   );
 }

@@ -31,8 +31,8 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 justify-items-center font-custom">
                     
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
-                        <Tilt tiltMaxAngleX={30} tiltMaxAngleY={30} perspective={2000} scale={1} glareEnable={true}>
-                            <div key={project.id} className="w-72 justify-center">
+                        <Tilt key={project.id} tiltMaxAngleX={30} tiltMaxAngleY={30} perspective={2000} scale={1} glareEnable={true}>
+                            <div className="w-72 justify-center">
                                 <div key={t(project.title[language])} className={`flex flex-col items-center ${darkMode ? 'bg-slate-700' : 'bg-gray-200'} h-auto w-72 rounded-lg shadow-md`}>
                                     <Link to={`/project/${project.slug}`} onClick={handleClick}>    
                                         <div className="w-full h-48 overflow-hidden rounded-t-lg">
