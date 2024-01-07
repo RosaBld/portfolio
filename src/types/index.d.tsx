@@ -50,3 +50,15 @@ export interface HeaderProps {
     setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
     darkMode: boolean;
 }
+
+export type darkModeCards = {
+    darkMode: boolean;
+    project: Project;
+    animating: boolean;
+    selectedCard: number | null;
+    setSelectedCard: React.Dispatch<React.SetStateAction<number | null>>;
+    setAnimating: Dispatch<SetStateAction<boolean>>;
+    setZIndices: React.Dispatch<React.SetStateAction<{ [key: number]: number }>>;
+    zIndices: { [key: number]: number };
+    style: React.CSSProperties;
+}
