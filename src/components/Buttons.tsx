@@ -50,7 +50,7 @@ export function BackNext({ darkMode }: darkModeProps) {
     };
 
     return (
-        <div className="flex flex-row justify-center gap-16 font-custom">
+        <div className="flex flex-row justify-center gap-16 pb-32 font-custom">
             <button onClick={goToLastProject} className="w-1/2 relative group cursor-pointer">
                 <div
                     className={`absolute -inset-1 bg-gradient-to-r ${darkMode ? 'from-blue to-cyan ' : 'from-fuchsia to-violet'} rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200`}>
