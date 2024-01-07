@@ -1,5 +1,9 @@
+//Libraries
 import { useContext } from 'react';
-import { LanguageContext } from '../components/LanguageContext';
+
+
+//Components
+import { LanguageContext } from '../utils';
 
 export function LanguageSwitch() {
     const { language, setLanguage } = useContext(LanguageContext);

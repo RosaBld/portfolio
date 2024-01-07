@@ -1,12 +1,19 @@
-import { useTranslation } from 'react-i18next';
-import data from '../db/projects.json';
-import { Project } from '../types/index.d';
-import { useLocation } from 'react-router-dom';
+// Libraries
 import React, { useState } from 'react';
-import { darkModeProps } from '../types/index.d';
-import EffectCards from './EffectCard';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
-const Cards: React.FC<darkModeProps> = ({ darkMode }) => {
+// JSON
+import data from '../db/projects.json';
+
+// Components
+import { EffectCards } from '../utils';
+
+// Types
+import { darkModeProps, Project } from '../types/index.d';
+
+
+export const Cards: React.FC<darkModeProps> = ({ darkMode }) => {
 
     const { t } = useTranslation();
 
@@ -49,5 +56,3 @@ const Cards: React.FC<darkModeProps> = ({ darkMode }) => {
         </>
     )
 }
-
-export default Cards;

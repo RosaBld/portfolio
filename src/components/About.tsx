@@ -1,10 +1,17 @@
-import { useTranslation } from 'react-i18next';
-import workData from '../db/workData.json';
-import educationData from "../db/education.json";
-import { WorkData, EducationData } from '../types/index.d';
+//Libraries
 import { useContext } from 'react';
-import { LanguageContext } from './LanguageContext';
-import { darkModeProps } from '../types/index.d'
+import { useTranslation } from 'react-i18next';
+
+//JSON
+import educationData from "../db/education.json";
+import workData from '../db/workData.json';
+
+//Components
+import { LanguageContext } from '../utils';
+
+//Types
+import { WorkData, EducationData, darkModeProps } from '../types/index.d';
+
 
 export function About({ darkMode }: darkModeProps) {
 

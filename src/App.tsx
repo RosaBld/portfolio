@@ -1,19 +1,13 @@
+//Libraries
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
+//Components
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import { Header } from './components/Header';
-import { About } from './components/About';
-import { Home } from './components/Home';
-import { Tech } from './components/Tech';
-import Cards from './components/Cards';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-import { LanguageContext } from './components/LanguageContext';
-import Project from './components/Project';
-import { DarkLight } from './components/DarkLight';
-import { AnimatePresence, motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { Header, About, Home, Tech, Cards, Contact, Footer, LanguageContext, Project, DarkLight } from './utils';
+
 
 function App() {
   const storedLanguage = localStorage.getItem('language');
@@ -61,14 +55,6 @@ function App() {
     
     <div style={{ position: 'relative' }}>
       <AnimatePresence mode='wait'>
-        {/* <motion.div
-          key={location.pathname}
-          initial={{ opacity: location.pathname !== '/' && location.pathname !==  ? 0 : 1, x: location.pathname !== '/' ? '-100%' : '0%' }}
-          animate={{ opacity: 1, x: '0%' }}
-          exit={{ opacity: 0, x: '100%' }}
-          style={{ position: 'absolute', width: '100%' }}
-          transition={{ duration: 0.5 }}
-        > */}
         <Routes location={location} key={location.key}>
           <Route path="/" element={
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>

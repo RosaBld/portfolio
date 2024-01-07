@@ -1,12 +1,23 @@
+//Libraries
 import { motion } from 'framer-motion';
-import Tilt from 'react-parallax-tilt';
-import { LanguageContext } from './LanguageContext';
-import { Link, useNavigate } from 'react-router-dom';
 import React, { useContext, useEffect, useState } from 'react';
-import { darkModeCards } from '../types/index.d';
+import Tilt from 'react-parallax-tilt';
 import { useTranslation } from 'react-i18next';
+import { Link, useNavigate } from 'react-router-dom';
 
-const EffectCards: React.FC<darkModeCards> = ({ darkMode, project, setSelectedCard, setZIndices, zIndices, style }) => {
+//JSON
+
+
+
+//Components
+import { LanguageContext } from '../utils';
+
+//Types
+import { darkModeCards } from '../types/index.d';
+
+
+
+export const EffectCards: React.FC<darkModeCards> = ({ darkMode, project, setSelectedCard, setZIndices, zIndices, style }) => {
     const { t } = useTranslation();
 
     const navigate = useNavigate();
@@ -81,5 +92,3 @@ const EffectCards: React.FC<darkModeCards> = ({ darkMode, project, setSelectedCa
         </div>
     )
 }
-
-export default EffectCards;

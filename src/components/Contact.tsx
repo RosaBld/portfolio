@@ -1,4 +1,11 @@
+// Libraries
 import { useTranslation } from 'react-i18next';
+
+//JSON
+
+//Components
+
+//Types
 import { darkModeProps } from '../types/index.d';
 
 export function Contact({ darkMode }: darkModeProps) {

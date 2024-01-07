@@ -1,13 +1,20 @@
+// Libraries
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+
+// JSON
 import data from '../db/projects.json';
-import { LanguageContext } from './LanguageContext';
+
+// Components
 import { Back, BackNext } from './Buttons';
-import { darkModeProps } from '../types/index.d';
+import { LanguageContext } from '../utils';
 import { LanguageContextType } from './LanguageContext';
 
+// Types
+import type { darkModeProps } from '../types/index.d';
 
-const Project: React.FC<darkModeProps> = ({ darkMode })=> {
+
+export const Project: React.FC<darkModeProps> = ({ darkMode })=> {
     const { slug } = useParams();
     const project = data.find(project => project.slug === slug);
 
@@ -63,5 +70,3 @@ const Project: React.FC<darkModeProps> = ({ darkMode })=> {
         </div>
     );
 };
-
-export default Project;

@@ -1,5 +1,8 @@
-import { useLocation } from 'react-router-dom';
+//Libraries
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+
+//Types
 import { darkModeProps } from '../types/index.d';
 
 export function Tech({ darkMode }: darkModeProps) {

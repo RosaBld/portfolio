@@ -1,6 +1,16 @@
+//Libraries
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
+
+//JSON
+
+
+//Components
+
+
+//Types
 import { darkModeProps } from '../types/index.d';
+
 
 export function Footer({ darkMode }: darkModeProps) {
     const { t } = useTranslation();

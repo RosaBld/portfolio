@@ -1,11 +1,17 @@
-import { Tech } from "./Tech";
-import Cards from "./Cards";
-import { Intro } from "./Intro";
-import { darkModeProps } from "../types/index.d";
+//Libraries
+import { faArrowCircleDown, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
-import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
+
+//JSON
+
+
+//Components
+import { Tech, Cards, Intro } from "../utils";
+
+//Types
+import { darkModeProps } from "../types/index.d";
+
 
 export function Home({ darkMode }: darkModeProps) {
     const techRef = useRef<HTMLDivElement | null>(null);
@@ -29,7 +35,7 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={introRef}>
                 <Intro darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-0 lg:justify-end lg:pt-8">
+            <div className="justify-center pt-0 lg:justify-end sm:pt-10 lg:pt-8">
                 <button onClick={scrollToTech}>
                     <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>
@@ -37,7 +43,7 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={techRef}>
                 <Tech darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-4 lg:justify-end lg:pt-4">
+            <div className="justify-center pt-4 lg:justify-end sm:pt-10 lg:pt-4">
                 <button onClick={scrollToProjects}>
                     <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>
@@ -45,7 +51,7 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={projectsRef}>
                 <Cards darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-4 pb-44 lg:pb-32 lg:flex lg:justify-end lg:pt-12">
+            <div className="justify-center pt-4 pb-44 sm:pt-10 lg:pb-32 lg:flex lg:justify-end lg:pt-12">
                 <button onClick={scrollToIntro}>
                     <FontAwesomeIcon icon={faArrowCircleUp} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>

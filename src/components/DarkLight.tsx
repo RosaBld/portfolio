@@ -1,7 +1,18 @@
-import { useEffect } from 'react';
+//Libraries
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect } from 'react';
+
+//JSON
+
+
+//Components
+
+
+//Types
 import { DarkLightProps } from '../types/index.d';
+
+
 
 export function DarkLight({ darkMode, setDarkMode }: DarkLightProps) {
 

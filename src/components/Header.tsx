@@ -1,12 +1,20 @@
-import { Link } from "react-router-dom";
-import { useState, useEffect } from 'react';
-import { LanguageSwitch } from "./LanguageSwitch";
-import { useTranslation } from 'react-i18next';
-import { useSpring, animated } from 'react-spring';
-import { useMediaQuery } from 'react-responsive';
-import { HeaderProps } from "../types/index.d";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//Libraries
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from "framer-motion";
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useMediaQuery } from 'react-responsive';
+import { Link } from "react-router-dom";
+
+//JSON
+
+
+//Components
+import { LanguageSwitch } from "../utils";
+
+//Types
+import { HeaderProps } from "../types/index.d";
 
 
 export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen, darkMode }) => {
@@ -22,6 +30,14 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
 
+    const openSidebar = () => {
+        setIsSidebarOpen(true);
+    };
+
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
+
     const toggleSidebar = () => {
         setIsSidebarOpen(prevState => !prevState);
     };
@@ -36,24 +52,48 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
         setIsSidebarOpenOnLargeScreen(isSidebarOpen);
     }
     }, [isLargeScreen, isSidebarOpen]);
-    
-    const sidebarStyle = useSpring({
-        transform: isLargeScreen ? 'translateX(0)' : isSidebarOpenOnLargeScreen ? 'translateY(0)' : 'translateY(-100%)', 
-        opacity: isLargeScreen ? 1 : isSidebarOpenOnLargeScreen ? 1 : 0,
-        config: { duration: 700 }
-    });
+
+    const sidebarVariants = {
+        open: { opacity: 1, x: 0 },
+        closed: { opacity: isLargeScreen ? 1 : 0, x: isLargeScreen ? 0 : "-100%" },
+    }
 
     return (
         <div className="flex justify-between w-full flex-row h-28 p-5 pb-10 font-custom lg:gap-20 xl:gap-36 lg:pt-12 lg:items-center">
-            <button onClick={toggleSidebar} className={`rounded-md px-4 py-2 bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-200 lg:hidden ${isSidebarOpen ? 'hidden' : ''}`}>
-                {isOpen ? 'Menu' : 'Menu'}
-            </button>
-                <animated.div style={sidebarStyle} className={`flex top-8 left-2 h-fit lg:static lg:transform-none lg:opacity-100 lg:flex lg:animate-none ${isSidebarOpen ? '' : 'hidden'}`}>
-                    <div>
-                        <button onClick={toggleSidebar} className="absolute top-0 right-0 m-2 lg:hidden">
-                            <FontAwesomeIcon icon={faXmark} style={{color: "white"}} />
-                        </button>
-                        <ul className={`flex flex-col gap-12 items-center rounded-md lg:px-6 px-6 lg:py-8 py-2 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} bg-gradient-to-b from-violet to-fuchsia`}>                            
+            <motion.button 
+                onClick={openSidebar} 
+                className={`rounded-md px-4 py-4 font-custom bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-200 lg:hidden ${isSidebarOpen ? 'hidden' : 'fixed'}`}
+                initial={{ scale: 1 }} 
+                whileHover={{ 
+                    scale: 1.2,
+                    transition: { duration: 0.5 },
+                    }} 
+                whileTap={{ scale: 0.9 }} 
+            >
+                {isOpen ? '' : 'Menu'}
+            </motion.button>
+
+                <motion.div 
+                    className={`sidebar ${isSidebarOpenOnLargeScreen ? 'open' : 'closed'}`}
+                    variants={sidebarVariants}
+                    initial="closed"
+                    animate={isSidebarOpen ? "open" : "closed"}
+                >
+                    
+                    <motion.button 
+                        onClick={closeSidebar}
+                        className="absolute top-0 right-0 m-2 lg:hidden"
+                        initial={{ opacity: 0.6 }}
+                        whileHover={{ 
+                        scale: 1.2,
+                        transition: { duration: 0.5 },
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        <FontAwesomeIcon icon={faXmark} style={{color: "white"}} />
+                    </motion.button>
+
+                        <ul className={`flex flex-col gap-12 items-center rounded-md lg:px-6 px-6 lg:py-8 py-6 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} bg-gradient-to-b from-violet to-fuchsia`}>                            
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
                                 <Link to="/" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-blue lg:bg-gradient-to-b lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('home')}</Link>
                             </li>
@@ -110,9 +150,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                
-            </animated.div>
+                    </motion.div>
             <LanguageSwitch />
         </div>
     )

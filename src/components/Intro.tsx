@@ -1,6 +1,16 @@
+//Libraries
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
+
+//JSON
+
+
+//Components
+
+
+//Types
 import { darkModeProps } from '../types/index.d';
+
 
 export function Intro({ darkMode }: darkModeProps) {
     const { t } = useTranslation();
@@ -23,7 +33,7 @@ export function Intro({ darkMode }: darkModeProps) {
             </div>
             <div className="relative rounded-full overflow-hidden p-3 lg:animate-slide-out">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-t from-violet to-fuchsia z-0"></div>
-                <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-36 lg:size-64 xl:size-80 z-10"/>
+                <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-36 sm:size-44 lg:size-64 xl:size-80 z-10"/>
             </div>
         </div>
     )

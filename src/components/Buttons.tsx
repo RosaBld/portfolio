@@ -1,7 +1,14 @@
+// Libraries
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import { useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
+
+//JSON
 import projects from '../db/projects.json';
+
+//Components
+
+
+//Types
 import { darkModeProps } from '../types/index.d';
 
 

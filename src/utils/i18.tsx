@@ -1,5 +1,8 @@
+//Libraries
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
+//JSON
 import translation from '../db/translation.json';
 
 i18n
