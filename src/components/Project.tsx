@@ -7,7 +7,7 @@ import { darkModeProps } from '../types/index.d';
 import { LanguageContextType } from './LanguageContext';
 
 
-const Card: React.FC<darkModeProps> = ({ darkMode })=> {
+const Project: React.FC<darkModeProps> = ({ darkMode })=> {
     const { slug } = useParams();
     const project = data.find(project => project.slug === slug);
 
@@ -64,4 +64,4 @@ const Card: React.FC<darkModeProps> = ({ darkMode })=> {
     );
 };
 
-export default Card;
+export default Project;

@@ -1,5 +1,5 @@
 import { Tech } from "./Tech";
-import Projects from "./Projects";
+import Cards from "./Cards";
 import { Intro } from "./Intro";
 import { darkModeProps } from "../types/index.d";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -29,25 +29,25 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={introRef}>
                 <Intro darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-8 lg:justify-end lg:pt-36">
+            <div className="justify-center pt-0 lg:justify-end lg:pt-8">
                 <button onClick={scrollToTech}>
-                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>
             </div>
             <div ref={techRef}>
                 <Tech darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-8 lg:justify-end lg:pt-12">
+            <div className="justify-center pt-4 lg:justify-end lg:pt-4">
                 <button onClick={scrollToProjects}>
-                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>
             </div>
             <div ref={projectsRef}>
-                <Projects darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-8 lg:flex lg:justify-end lg:pt-12">
+            <div className="justify-center pt-4 pb-44 lg:pb-32 lg:flex lg:justify-end lg:pt-12">
                 <button onClick={scrollToIntro}>
-                    <FontAwesomeIcon icon={faArrowCircleUp} className="animate-beat size-20 lg:size-24" style={{color: "fuchsia"}} />
+                    <FontAwesomeIcon icon={faArrowCircleUp} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>
             </div>
         </>

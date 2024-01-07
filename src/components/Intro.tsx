@@ -10,9 +10,9 @@ export function Intro({ darkMode }: darkModeProps) {
     };
 
     return (
-        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-28 lg:pt-36 pb-8">
+        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-8 lg:pt-24 pb-8">
             <div className="max-w-xl">
-                <h1 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-4xl lg:text-6xl uppercase font-bold lg:leading-tight text-left font-custom lg:animate-slide-in`}>
+                <h1 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-3xl lg:text-5xl uppercase font-bold lg:leading-tight text-left font-custom lg:animate-slide-in`}>
                     {t('intro_greeting')} 
                         <Link to="/about" onClick={handleClick} style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </Link> 
                     {t('intro_role1')}

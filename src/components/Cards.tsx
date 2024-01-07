@@ -18,23 +18,22 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
 
     const handleClick = () => {
         window.scrollTo(0, 0);
-    };
+    }; 
     
     return (
         <>
-            <div className={`${isHomePage ? `pt-16` : 'pt-10'}`}>
+            <div className={`${isHomePage ? `pt-16` : 'pt-10'} ${isHomePage ? `pb-0` : 'pb-32'}`}>
                 <div className="py-10" >
-                    <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
-                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
+                    <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl lg:text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
+                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-xl lg:text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 justify-items-center font-custom">
-                    
                     {data.sort((a: Project, b: Project) => b.id - a.id).map((project: Project) => (
                         <Tilt key={project.id} tiltMaxAngleX={30} tiltMaxAngleY={30} perspective={2000} scale={1} glareEnable={true}>
                             <div className="w-72 justify-center">
                                 <div key={t(project.title[language])} className={`flex flex-col items-center ${darkMode ? 'bg-slate-700' : 'bg-gray-200'} h-auto w-72 rounded-lg shadow-md`}>
-                                    <Link to={`/project/${project.slug}`} onClick={handleClick}>    
+                                    <Link onClick={handleClick} to={`/project/${project.slug}`}>    
                                         <div className="w-full h-48 overflow-hidden rounded-t-lg">
                                             <img src={project.image} className="w-full h-full object-cover" />
                                         </div>                                        
@@ -63,7 +62,6 @@ const Projects: React.FC<darkModeProps> = ({ darkMode }) => {
                                         </div>
                                     </div>
                                 </div>
-                            
                             </div>
                         </Tilt>
                     ))}

@@ -10,8 +10,8 @@ export function Footer({ darkMode }: darkModeProps) {
     };
 
     return (
-        <div className={`font-custom text-xs ${darkMode ? 'text-white' : 'text-black'}`}>
-            <div className="gap-4 flex flex-col items-center lg:flex lg:flex-row lg:justify-between pt-28 pb-10 px-24">
+        <div className={`fixed bottom-0 left-10 right-10 font-custom text-xs ${darkMode ? 'text-white' : 'text-black'} ${darkMode ? ' bg-slate-900' : 'bg-slate-100'}`}>
+            {/* <div className="gap-4 flex flex-col items-center lg:flex lg:flex-row lg:justify-between pt-6 pb-6 px-24">
                 <p>rosalie.boulard@gmail.com</p>
                 <div className="flex flex-row gap-10">
                     <a href="https://github.com/RosaBld" target="_blank" rel="noopener noreferrer">
@@ -25,8 +25,8 @@ export function Footer({ darkMode }: darkModeProps) {
                         </svg>
                     </a>
                 </div>
-            </div>
-            <div className={`grid grid-cols-2 items-center justify-items-center gap-4 md:flex md:flex-row md:justify-between pt-10 border-t-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+            </div> */}
+            <div className={`grid grid-cols-2 items-center justify-items-center gap-4 pb-8 md:flex md:flex-row md:justify-between pt-8 border-t-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                 <ul className="md:flex md:flex-row md:space-x-4 gap-5">
                     <li>
                         <Link to="/" onClick={handleClick}>{t('home')}</Link>
