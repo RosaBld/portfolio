@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
     }
 
     return (
-        <div className="flex justify-between w-full flex-row h-12 p-5 font-custom lg:gap-20 xl:gap-36 lg:pt-12 lg:items-center">
+        <div className="flex justify-between w-full flex-row h-24 p-5 font-custom lg:gap-20 xl:gap-36 lg:h-12 lg:pt-12 lg:items-center">
             <motion.button 
                 onClick={openSidebar} 
                 className={`rounded-md px-4 py-4 font-custom bg-gradient-to-b from-violet to-fuchsia text-white transform transition-transform duration-500 hover:scale-200 lg:hidden ${isSidebarOpen ? 'hidden' : 'fixed'}`}
