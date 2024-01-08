@@ -33,7 +33,11 @@
             "link": "Link to",
             "getBack": "Back to",
             "darkLight": "Dark and light mode",
-            "seePro": "See project details"
+            "seePro": "See project details",
+            "up": "Scroll top page",
+            "down": "Scroll down",
+            "sidebar":"SideBar Menu",
+            "closeSidebar": "Closing sidebar Menu"
         }
     },
 
@@ -72,7 +76,11 @@
             "link": "Lien vers",
             "getBack": "Retour aux",
             "darkLight": "Modes clair et sombre",
-            "seePro": "Voir projets détails"
+            "seePro": "Voir projets détails",
+            "up": "Scroller en haut de la page",
+            "down": "Scroller d'une section en bas",
+            "sidebar":"Menu latéral",
+            "closeSidebar": "Fermer menu latéral"
         }
     
     }

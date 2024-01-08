@@ -78,6 +78,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
                     variants={sidebarVariants}
                     initial="closed"
                     animate={isSidebarOpen ? "open" : "closed"}
+                    aria-label={t('sidebar')}
                 >
                     
                     <motion.button 
@@ -89,6 +90,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
                         transition: { duration: 0.5 },
                         }}
                         whileTap={{ scale: 0.9 }}
+                        aria-label={t('closeSidebar')}
                     >
                         <FontAwesomeIcon icon={faXmark} style={{color: "white"}} />
                     </motion.button>
