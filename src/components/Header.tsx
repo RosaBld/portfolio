@@ -95,22 +95,22 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
 
                         <ul className={`flex flex-col gap-12 items-center rounded-md lg:px-6 px-6 lg:py-8 py-6 lg:flex-row lg:gap-12 ${darkMode ? ' lg:bg-slate-900 lg:from-slate-900 lg:to-slate-900' : 'lg:bg-slate-100 lg:from-slate-100 lg:to-slate-100'} bg-gradient-to-b from-violet to-fuchsia`}>                            
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
-                                <Link to="/" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-blue lg:bg-gradient-to-b lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('home')}</Link>
+                                <Link to="/" aria-label={`${t('link')} ${t('home')}`} onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-blue lg:bg-gradient-to-b lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('home')}</Link>
                             </li>
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
-                                <Link to="/about" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-cyan lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('about')}</Link>
+                                <Link to="/about" aria-label={`${t('link')} ${t('about')}`} onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-blue hover:to-cyan lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('about')}</Link>
                             </li>
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-24">
-                                <Link to="/tech" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('techstack')}</Link>
+                                <Link to="/tech" aria-label={`${t('link')} ${t('techstack')}`} onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('techstack')}</Link>
                             </li>
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
-                                <Link to="/projects" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('projects')}</Link>
+                                <Link to="/projects" aria-label={`${t('link')} ${t('projects')}`} onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('projects')}</Link>
                             </li>
                             <li className="text-base transform transition-transform duration-500 hover:scale-125 lg:text-base lg:transform lg:transition-transform lg:duration-500 lg:hover:scale-150 lg:w-20">
-                                <Link to="/contact" onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('Contact')}</Link>
+                                <Link to="/contact" aria-label={`${t('link')} ${t('Contact')}`} onClick={() => { handleClick(); toggleSidebar(); }} className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white hover:from-cyan hover:to-blue lg:from-cyan lg:to-blue lg:hover:from-violet lg:hover:to-fuchsia">{t('Contact')}</Link>
                             </li>
                             <li>
-                                <a onClick={() => { handleClick(); toggleSidebar(); }} href="https://github.com/RosaBld" target="_blank" rel="noopener noreferrer">
+                                <a onClick={() => { handleClick(); toggleSidebar(); }} href="https://github.com/RosaBld" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="18" viewBox="0 0 496 512" className="transform transition-transform duration-500 hover:scale-150"
                                         onMouseEnter={() => setIsHovered1(true)}
                                         onMouseLeave={() => setIsHovered1(false)}
@@ -130,7 +130,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, setIsSidebarOpen,
                                 </a>
                             </li>
                             <li>
-                                <a onClick={() => { handleClick(); toggleSidebar(); }} href="https://www.linkedin.com/in/rosalie-boulard/" target="_blank" rel="noopener noreferrer">
+                                <a onClick={() => { handleClick(); toggleSidebar(); }} href="https://www.linkedin.com/in/rosalie-boulard/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="18" viewBox="0 0 448 512" className="transform transition-transform duration-500 hover:scale-150"
                                         onMouseEnter={() => setIsHovered2(true)}
                                         onMouseLeave={() => setIsHovered2(false)}

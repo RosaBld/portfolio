@@ -5,6 +5,7 @@
             "about": "About",
             "techstack": "Tech Stack",
             "projects": "Projects",
+            "project": "Project",
             "contacts": "Contact",
             "intro_greeting": "Hi, my name is",
             "intro_role1": "and I'm a ",
@@ -24,7 +25,15 @@
             "build3": "and",
             "backpro": "Back to projects",
             "next": "Next",
-            "back": "Back" 
+            "back": "Back",
+            "more": "More",
+            "view": "View Code",
+            "undeployed": "Not Deployed",
+            "deployed": "Deployed",
+            "link": "Link to",
+            "getBack": "Back to",
+            "darkLight": "Dark and light mode",
+            "seePro": "See project details"
         }
     },
 
@@ -34,6 +43,7 @@
             "about": "A propos",
             "techstack": "Tech Stack",
             "projects": "Projets",
+            "project": "Project",
             "contacts": "Contact",
             "intro_greeting": "Bonjour, je m'appelle",
             "intro_role1": "et je suis ",
@@ -54,7 +64,15 @@
             "build3": "et",
             "backpro": "Retour aux projets",
             "next": "Suivant",
-            "back": "Précédent" 
+            "back": "Précédent",
+            "more": "Plus",
+            "view": "Voir le code",
+            "undeployed": "Non Déployé",
+            "deployed": "Déployé",
+            "link": "Lien vers",
+            "getBack": "Retour aux",
+            "darkLight": "Modes clair et sombre",
+            "seePro": "Voir projets détails"
         }
     
     }

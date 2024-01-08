@@ -18,7 +18,7 @@ export function Back({ darkMode }: darkModeProps) {
 
     return (
         <div className="text-left font-custom pt-6">
-            <Link to={'/projects' } className="flex flex-row justify-items-center items-center gap-8 bg-clip-text text-transparent bg-gradient-to-b from-slate-600 to-slate-600 hover:from-violet hover:to-fuchsia">
+            <Link to={'/projects' } aria-label={`${t('backpro')}`} className="flex flex-row justify-items-center items-center gap-8 bg-clip-text text-transparent bg-gradient-to-b from-slate-600 to-slate-600 hover:from-violet hover:to-fuchsia">
                 <svg className={darkMode ? 'fill-current' : 'fill-current'} xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                     <path fill="gray" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
                 </svg>
@@ -58,7 +58,7 @@ export function BackNext({ darkMode }: darkModeProps) {
 
     return (
         <div className="flex flex-row justify-center gap-16 pb-32 font-custom">
-            <button onClick={goToLastProject} className="w-1/2 relative group cursor-pointer">
+            <button onClick={goToLastProject} aria-label={`${t('back')} ${t('project')}`} className="w-1/2 relative group cursor-pointer">
                 <div
                     className={`absolute -inset-1 bg-gradient-to-r ${darkMode ? 'from-blue to-cyan ' : 'from-fuchsia to-violet'} rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200`}>
                 </div>
@@ -73,7 +73,7 @@ export function BackNext({ darkMode }: darkModeProps) {
                 </div>
             </button>
     
-            <button onClick={goToNextProject} className="w-1/2 relative group cursor-pointer">
+            <button onClick={goToNextProject} aria-label={`${t('next')} ${t('project')}`} className="w-1/2 relative group cursor-pointer">
                 <div
                     className={`absolute -inset-1 bg-gradient-to-r ${darkMode ? 'from-cyan to-blue' : 'from-violet to-fuchsia '} rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200`}>
                 </div>

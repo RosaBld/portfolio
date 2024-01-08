@@ -24,9 +24,9 @@ export function Intro({ darkMode }: darkModeProps) {
             <div className="max-w-xl">
                 <h1 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-3xl lg:text-5xl uppercase font-bold lg:leading-tight text-left font-custom lg:animate-slide-in`}>
                     {t('intro_greeting')} 
-                        <Link to="/about" onClick={handleClick} style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </Link> 
+                        <Link to="/about" onClick={handleClick} aria-label={`${t('link')} ${t('about')}`} style={{ background: 'linear-gradient(to bottom, pink, fuchsia)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Rosalie Boulard </Link> 
                     {t('intro_role1')}
-                    <Link to="/contact" onClick={handleClick} className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:100%_6px] bg-no-repeat bg-bottom hover:bg-gradient-to-r hover:from-indigo-500 hover:to-rose-400 via-fuchsia-500 lg:bg-[length:100%_6px] hover:bg-no-repeat hover:bg-bottom">
+                    <Link to="/contact" onClick={handleClick} aria-label={`${t('link')} ${t('Contact')}`} className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:100%_6px] bg-no-repeat bg-bottom hover:bg-gradient-to-r hover:from-indigo-500 hover:to-rose-400 via-fuchsia-500 lg:bg-[length:100%_6px] hover:bg-no-repeat hover:bg-bottom">
                         {t('intro_role2')}    
                     </Link>
                 </h1>

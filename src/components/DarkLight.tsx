@@ -2,6 +2,7 @@
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 //JSON
 
@@ -15,6 +16,8 @@ import { DarkLightProps } from '../types/index.d';
 
 
 export function DarkLight({ darkMode, setDarkMode }: DarkLightProps) {
+
+    const { t } = useTranslation();
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -30,7 +33,7 @@ export function DarkLight({ darkMode, setDarkMode }: DarkLightProps) {
 
     return (
         <div className="h-20 p-9 lg:p-9 pb-9 gap-8">
-            <button onClick={toggleDarkMode}>
+            <button onClick={toggleDarkMode} aria-label={t('darkLight')}>
                 <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className={`size-6 ${darkMode ? 'text-fuchsia-500' : 'text-blue-600'}`} />
             </button>
         </div>

@@ -39,19 +39,19 @@ export function Footer({ darkMode }: darkModeProps) {
             <div className={`grid grid-cols-2 items-center justify-items-center gap-4 pb-8 md:flex md:flex-row md:justify-between pt-8 border-t-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                 <ul className="md:flex md:flex-row md:space-x-4 gap-5">
                     <li>
-                        <Link to="/" onClick={handleClick}>{t('home')}</Link>
+                        <Link to="/" onClick={handleClick} aria-label={`${t('link')} ${t('home')}`}>{t('home')}</Link>
                     </li>
                     <li>
-                        <Link to="/about" onClick={handleClick}>{t('about')}</Link>
+                        <Link to="/about" onClick={handleClick} aria-label={`${t('link')} ${t('about')}`}>{t('about')}</Link>
                     </li>
                     <li>
-                        <Link to="/tech" onClick={handleClick}>{t('techstack')}</Link>
+                        <Link to="/tech" onClick={handleClick} aria-label={`${t('link')} ${t('techstack')}`}>{t('techstack')}</Link>
                     </li>
                     <li>
-                        <Link to="/projects" onClick={handleClick}>{t('projects')}</Link>
+                        <Link to="/projects" onClick={handleClick} aria-label={`${t('link')} ${t('projects')}`}>{t('projects')}</Link>
                     </li>
                     <li>
-                        <Link to="/contact" onClick={handleClick}>{t('Contact')}</Link>
+                        <Link to="/contact" onClick={handleClick} aria-label={`${t('link')} ${t('Contact')}`}>{t('Contact')}</Link>
                     </li>
                 </ul>
                 <ul>
