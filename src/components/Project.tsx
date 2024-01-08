@@ -33,12 +33,12 @@ export const Project: React.FC<darkModeProps> = ({ darkMode })=> {
             <div className="py-12 font-custom">
                 <div className="text-left">
                     <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-4xl lg:text-6xl font-bold py-4`}>{project.title[language]}</h2>
-                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-2xl lg:text-3xl py-2 text-justify`}>{project.overview[language]}</p>
+                    <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-2xl lg:text-3xl py-2 text-justify`}>{project.overview[language]}</h3>
                 </div>
 
                 <div className="flex flex-row justify-between py-4">
-                    <p className="text-xs lg:text-sm text-gray-500">Tech stack: {project.tech}</p>
-                    <p className="text-xs lg:text-sm text-gray-500">Project Deadline: {project.deadline}</p>
+                    <h4 className="text-xs lg:text-sm text-gray-500">Tech stack: {project.tech}</h4>
+                    <h4 className="text-xs lg:text-sm text-gray-500">Project Deadline: {project.deadline}</h4>
                 </div>
 
                 <div className="flex flex-row justify-between py-4 pb-12">
@@ -55,7 +55,7 @@ export const Project: React.FC<darkModeProps> = ({ darkMode })=> {
                         </svg>
                         {project.deploy ? 
                             <a href={project.deploy} target="_blank" aria-label={`${t('project')} ${t('deployed')}`} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{`${t('project')} ${t('deployed')}`}</a> : 
-                            <p className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('undeployed')}</p>
+                            <h5 className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{t('undeployed')}</h5>
                         }
                     </div>
                 </div>

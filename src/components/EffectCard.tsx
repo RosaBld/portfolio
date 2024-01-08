@@ -64,10 +64,10 @@ export const EffectCards: React.FC<darkModeCards> = ({ darkMode, project, setSel
                             <img src={project.image} alt={t(project.title[language])} className="w-full h-full object-cover" />
                             </div>                                        
                             <div className="p-4 text-left w-68">
-                                <h3 className={`font-bold text-2xl h-12 ${darkMode ? 'text-gray-200' : 'text-gray-800'} `}>{t(project.title[language])}</h3>
-                                <p className={`${darkMode ? 'text-gray-400' : 'text-gray-800'} text-md pt-4 h-28`}>{t(project.preview[language])}</p>
-                                <p className={`text-md pt-4 h-12 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Project Deadline: <span className={`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.deadline} </span></p>
-                                <p className={`text-md pt-4 h-12 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Tech stack:<span className= {`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.tech} </span></p>
+                                <h4 className={`font-bold text-2xl h-12 ${darkMode ? 'text-gray-200' : 'text-gray-800'} `}>{t(project.title[language])}</h4>
+                                <h5 className={`${darkMode ? 'text-gray-400' : 'text-gray-800'} text-md pt-4 h-28`}>{t(project.preview[language])}</h5>
+                                <h5 className={`text-md pt-4 h-12 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Project Deadline: <span className={`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.deadline} </span></h5>
+                                <h5 className={`text-md pt-4 h-12 ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Tech stack:<span className= {`${darkMode ? 'text-gray-200' : 'text-gray-600'} `}> {project.tech} </span></h5>
                             </div>
                         </Link>
                         <div className="flex flex-row w-60 p-4 justify-between text-xs">
@@ -83,7 +83,7 @@ export const EffectCards: React.FC<darkModeCards> = ({ darkMode, project, setSel
                                 </svg>
                                 {project.deploy ? 
                                     <a href={project.deploy} target="_blank" aria-label={`${t('project')} ${t('deployed')}`} className="bg-clip-text text-transparent bg-gradient-to-b from-cyan to-blue hover:from-violet hover:to-fuchsia">{`${t('project')} ${t('deployed')}`}</a> : 
-                                    <p className="bg-clip-text text-transparent bg-gradient-to-b from-violet to-fuchsia">{t('undeployed')}</p>
+                                    <h5 className="bg-clip-text text-transparent bg-gradient-to-b from-violet to-fuchsia">{t('undeployed')}</h5>
                                 }
                             </div>
                         </div>

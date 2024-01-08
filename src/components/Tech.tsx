@@ -18,9 +18,9 @@ export function Tech({ darkMode }: darkModeProps) {
                 <h2 className={`font-bold py-2 my-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${isHomePage ? 'text-center text-4xl lg:text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>
                     {t('tech_title')}
                 </h2>
-                <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} ${isHomePage ? 'text-center text-xl lg:text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
+                <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} ${isHomePage ? 'text-center text-xl lg:text-2xl ' : 'text-left text-2xl lg:text-3xl'}`}>
                     {t('tech_text')}
-                </p>
+                </h3>
             </div>
 
             <div className="flex items-center justify-center font-custom">
