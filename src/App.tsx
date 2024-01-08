@@ -63,38 +63,68 @@ function App() {
           <AnimatePresence mode='wait'>
             <Routes location={location} key={location.key}>
               <Route path="/" element={
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }} 
+                  exit={{ opacity: 0 }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <Home darkMode={darkMode} />
                 </motion.div>
               } />
               <Route path="/about" element={
-                <motion.div initial={{ opacity: 0, x: '-100%' }} animate={{ opacity: 1, x: '0%' }} exit={{ opacity: 0, x: '100%' }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0, x: '-100%' }} 
+                  animate={{ opacity: 1, x: '0%' }} 
+                  exit={{ opacity: 0, x: '100%' }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <About darkMode={darkMode} />
                 </motion.div>
               } />
               <Route path="/tech" element={
-                <motion.div initial={{ opacity: 0, x: '-100%' }} animate={{ opacity: 1, x: '0%' }} exit={{ opacity: 0, x: '100%' }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0, x: '-100%' }} 
+                  animate={{ opacity: 1, x: '0%' }} 
+                  exit={{ opacity: 0, x: '100%' }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <Tech darkMode={darkMode} />
                 </motion.div>
               } />
               <Route path="/projects" element={
-                <motion.div initial={{ opacity: 0, x: '-100%' }} animate={{ opacity: 1, x: '0%' }} exit={{ opacity: 0, x: '100%' }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0, x: '-100%' }} 
+                  animate={{ opacity: 1, x: '0%' }} 
+                  exit={{ opacity: 0, x: '100%' }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <Cards darkMode={darkMode} />
                 </motion.div>
               } />
               <Route path="/contact" element={
-                <motion.div initial={{ opacity: 0, x: '-100%' }} animate={{ opacity: 1, x: '0%' }} exit={{ opacity: 0, x: '100%' }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0, x: '-100%' }} 
+                  animate={{ opacity: 1, x: '0%' }} 
+                  exit={{ opacity: 0, x: '100%' }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <Contact darkMode={darkMode} />
                 </motion.div>
               } />
               <Route path="/project/:slug" element={
-                <motion.div initial={{ opacity: 0, x: '-100%' }} animate={{ opacity: 1, x: '0%' }} exit={{ opacity: 0, x: '100%' }} transition={{ duration: 0.5 }}>
+                <motion.div 
+                  initial={{ opacity: 0, x: '-100%' }} 
+                  animate={{ opacity: 1, x: '0%' }} 
+                  exit={{ opacity: 0, x: '100%' }} 
+                  transition={{ duration: 0.5 }}
+                >
                   <Project darkMode={darkMode} />
                 </motion.div>
               } />
             </Routes>
           </AnimatePresence>
-          
+
           <footer>
             <Footer darkMode={darkMode} />
           </footer>
