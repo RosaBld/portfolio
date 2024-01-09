@@ -20,7 +20,7 @@ export function Intro({ darkMode }: darkModeProps) {
     };
 
     return (
-        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-8 lg:pt-20 pb-8">
+        <div className="flex flex-col gap-10 lg:flex-row justify-between items-center pt-16 lg:pt-20 pb-8">
             <div className="max-w-xl">
                 <h1 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} text-3xl lg:text-5xl uppercase font-bold lg:leading-tight text-left font-custom lg:animate-slide-in`}>
                     {t('intro_greeting')} 
@@ -33,7 +33,7 @@ export function Intro({ darkMode }: darkModeProps) {
             </div>
             <div className="relative rounded-full overflow-hidden p-3 lg:animate-slide-out">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-t from-violet to-fuchsia z-0"></div>
-                <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-36 sm:size-44 lg:size-64 xl:size-80 z-10"/>
+                <img src="/pp.jpg" alt="profil picture" className="relative rounded-full size-36 sm:size-44 lg:size-64 xl:size-80 z-5"/>
             </div>
         </div>
     )

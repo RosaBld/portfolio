@@ -15,7 +15,7 @@ export function Footer({ darkMode }: darkModeProps) {
     const { t } = useTranslation();
 
     return (
-        <div className={`fixed bottom-0 left-10 right-10 font-custom text-xs ${darkMode ? 'text-white' : 'text-black'} ${darkMode ? ' bg-slate-900' : 'bg-slate-100'}`}>
+        <div className={`fixed bottom-0 left-10 right-10 font-custom text-xs ${darkMode ? 'text-white' : 'text-black'} ${darkMode ? ' bg-slate-900' : 'bg-slate-100'} z-10`}>
             
             <div className={`pb-5 pt-6 border-t-4 text-right ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                 

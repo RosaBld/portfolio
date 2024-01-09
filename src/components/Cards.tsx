@@ -30,10 +30,10 @@ export const Cards: React.FC<darkModeProps> = ({ darkMode }) => {
 
     return (
         <>
-            <div className={`${isHomePage ? `pt-16` : 'pt-10'} ${isHomePage ? `pb-0` : 'pb-32'}`}>
+            <div className={`${isHomePage ? `pt-16` : 'pt-2 lg:pt-10'} ${isHomePage ? `pb-0` : 'pb-4 lg:pb-32'}`}>
                 <div className="py-10" >
                     <h2 className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} font-bold py-2 my-2 ${isHomePage ? 'text-center text-4xl lg:text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>{t('project_title')}</h2>
-                    <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-xl lg:text-2xl' : 'text-left tex-2xl lg:text-3xl'}`}>{t('project_text')}</h3>
+                    <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}  ${isHomePage ? 'text-center text-xl lg:text-2xl' : 'text-left text-2xl lg:text-3xl'}`}>{t('project_text')}</h3>
                 </div>
 
                 <div style={{ position: 'relative' }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 justify-items-center font-custom">

@@ -13,7 +13,7 @@ export function Tech({ darkMode }: darkModeProps) {
     const isHomePage = location.pathname === '/';
 
     return (
-        <div className={`${isHomePage ? `pt-16` : 'pt-10'} ${isHomePage ? `pb-0` : 'pb-32'}`}>
+        <div className={`${isHomePage ? `pt-16` : 'pt-2 lg:pt-10'} ${isHomePage ? `pb-0` : 'pb-4 lg:pb-32'}`}>
             <div className="py-10">
                 <h2 className={`font-bold py-2 my-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${isHomePage ? 'text-center text-4xl lg:text-5xl' : 'text-left text-4xl lg:text-6xl'}`}>
                     {t('tech_title')}
