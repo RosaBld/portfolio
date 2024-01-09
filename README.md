@@ -4,7 +4,7 @@ This project is a solo project to go deeper in React and Vite.JS but also to lea
 
 The goal of this project was to be able to create, completely solo, a side project, to get idea and to put them together.
 
-09/01/2024 => Update ==> Adding the list of genres and fixing some issues with the SASS!
+It was also a great way to show some of the skills I learned during my classes and to put them together for a future internship
 
 ## What you'll find here
 
