@@ -30,5 +30,37 @@
         "en": "Sep 2022 - Aug 2023",
         "fr": "Sept 2022 - Août 2023"
       }
+    },
+    {
+      "title": {
+        "en": "Student worker",
+        "fr": "Etudiante ouvrière"
+      },
+      "time": {
+        "en": "Holidays",
+        "fr": "Vacances scolaires"
+      },
+      "place": "Schneider Electric",
+      "location": "Uccles",
+      "date": {
+        "en": "Jully 2013 - Aug 2023",
+        "fr": "Juillet 2013 - Août 2023"
+      }
+    },
+    {
+      "title": {
+        "en": "Student cashier",
+        "fr": "Etudiante caissière"
+      },
+      "time": {
+        "en": "Weekends",
+        "fr": "Weekends"
+      },
+      "place": "Carrefour Market",
+      "location": "Saint-Ghislain",
+      "date": {
+        "en": "Jully 2013 - Aug 2023",
+        "fr": "Juillet 2013 - Août 2023"
+      }
     }
 ]

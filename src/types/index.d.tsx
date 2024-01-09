@@ -32,6 +32,7 @@ export type WorkData = {
 export type EducationData = {
     title: Translation,
     time: Translation,
+    graduate: Translation,
     place: string,
     date: Translation,
 }

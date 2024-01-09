@@ -37,7 +37,7 @@ export function Home({ darkMode }: darkModeProps) {
             <div ref={introRef}>
                 <Intro darkMode={darkMode} />
             </div>
-            <div className="justify-center pt-0 lg:justify-end sm:pt-10 lg:pt-8">
+            <div className="justify-center pt-0 lg:justify-end sm:pt-10 lg:pt-16">
                 <button onClick={scrollToTech} aria-label={t('down')}>
                     <FontAwesomeIcon icon={faArrowCircleDown} className="animate-beat size-12 lg:size-16" style={{color: "fuchsia"}} />
                 </button>

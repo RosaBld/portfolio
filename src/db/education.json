@@ -8,6 +8,10 @@
         "en": "Full Time",
         "fr": "Temps plein"
       },
+      "graduate": {
+        "en": "Not graduated",
+        "fr": "Pas diplomée"
+      },
       "place": "Université Libre de Bruxelles",
       "date": {
         "en": "Sep 2020 - Sep 2022",
@@ -23,10 +27,52 @@
         "en": "Full Time",
         "fr": "Temps plein"
       },
+      "graduate": {
+        "en": "Graduated",
+        "fr": "Diplomée"
+      },
       "place": "Université Libre de Bruxelles",
       "date": {
         "en": "Sep 2016 - Sep 2020",
         "fr": "Sept 2016 - Août 2020"
+      }
+    },
+    {
+      "title": {
+        "en": "Bachelor in Musical Education",
+        "fr": "Bachelier en Formation Musicale"
+      },
+      "time": {
+        "en": "Full Time",
+        "fr": "Temps plein"
+      },
+      "graduate": {
+        "en": "Not graduated",
+        "fr": "Pas diplomée"
+      },
+      "place": "Institut de Musique et de Pedagogie de Namur",
+      "date": {
+        "en": "Sep 2014 - Sep 2016",
+        "fr": "Sept 2014 - Août 2016"
+      }
+    },
+    {
+      "title": {
+        "en": "Upper Secondary Education Certificate",
+        "fr": "Certificat d'Etudes Secondes Supérieur"
+      },
+      "time": {
+        "en": "Full Time",
+        "fr": "Temps plein"
+      },
+      "graduate": {
+        "en": "Graduated",
+        "fr": "Diplomée"
+      },
+      "place": "Collège Sainte-Marie de Saint-Ghislain",
+      "date": {
+        "en": "Sep 2006 - Sep 2013",
+        "fr": "Sept 2006 - Août 2013"
       }
     }
 ]

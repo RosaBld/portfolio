@@ -1,4 +1,6 @@
 // Libraries
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 
@@ -12,16 +14,14 @@ import projects from '../db/projects.json';
 import { darkModeProps } from '../types/index.d';
 
 
-export function Back({ darkMode }: darkModeProps) {
+export function Back() {
 
     const { t } = useTranslation();
 
     return (
         <div className="text-left font-custom pt-6">
             <Link to={'/projects' } aria-label={`${t('backpro')}`} className="flex flex-row justify-items-center items-center gap-8 bg-clip-text text-transparent bg-gradient-to-b from-slate-600 to-slate-600 hover:from-violet hover:to-fuchsia">
-                <svg className={darkMode ? 'fill-current' : 'fill-current'} xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                    <path fill="gray" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                </svg>
+                <FontAwesomeIcon icon={faArrowLeft} style={{color: "#9ca3af"}} />
                 {t('backpro')}
             </Link>
         </div>
@@ -65,9 +65,7 @@ export function BackNext({ darkMode }: darkModeProps) {
                 <div
                     className={`relative justify-center px-7 py-6 ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6`}>
                     <div className={`space-y-2 ${darkMode ? 'text-white' : 'text-slate-700'} flex flex-row gap-4`}>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                            <path fill="gray" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                        </svg>
+                        <FontAwesomeIcon icon={faArrowLeft} />
                         {t('back')}
                     </div>
                 </div>
@@ -81,28 +79,10 @@ export function BackNext({ darkMode }: darkModeProps) {
                     className={`relative justify-center px-7 py-6 ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6`}>
                     <div className={`space-y-2 ${darkMode ? 'text-white' : 'text-slate-700'} flex flex-row gap-4`}>
                         {t('next')}
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                            <path fill="gray" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
-                        </svg>
+                        <FontAwesomeIcon icon={faArrowRight} />
                     </div>
                 </div>
             </button>
-
-
-
-            {/* <button onClick={goToLastProject} className="rounded-md  shadow-md text-gray-400 py-4 w-full border-solid border-2 border-gray-200 bg-slate-100 flex flex-row justify-items-center items-center gap-8 justify-center transform transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                    <path fill="gray" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                </svg>
-                {t('back')}
-            </button>
-            
-            <button onClick={goToNextProject} className="rounded-md  shadow-md text-gray-400 py-4 w-full border-solid border-2 border-gray-200 bg-slate-100 flex flex-row justify-items-center items-center gap-8 justify-center transform transition-transform">
-                {t('next')}
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                    <path fill="gray" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
-                </svg>
-            </button> */}
         </div>
     );
 }
