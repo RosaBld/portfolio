@@ -14,7 +14,7 @@
         "deadline": "12/10/2023",
         "tech": ["HTML, SASS, JavaScript"],
         "git": "https://github.com/RosaBld/WeatherApp",
-        "deploy": "https://quiet-dolphin-6ecc99.netlify.app/",
+        "deploy": "https://weatherapp-bld.netlify.app/",
         "overview": {
             "en": "In this weather app, you can select the city from where you want the weather. It will display for you the forecast of the 5 next day (including today) with the date (including the day of the week), an cute little icon with the forecast, the min and max temperature and the weather (rain ? snow ? sun ?). You'll also be abble to select multiple cities if you need to compare their weather for the next few days. Every past research will be stored on your side and every time you'll reload the page, you'll still see your previous researches with the different forecasts still showing on your awesome webpage. To clean it, you simply have to ckicl on the magnificient button at the bottom of the page.",
             "fr": "Dans cette application météo, vous pouvez sélectionner la ville dont vous souhaitez connaître la météo. Elle affichera pour vous les prévisions des 5 prochains jours (y compris aujourd'hui) avec la date (y compris le jour de la semaine), une jolie petite icône avec les prévisions, la température minimale et maximale et la météo (pluie ? neige ? soleil ?). Vous pourrez également sélectionner plusieurs villes si vous avez besoin de comparer leur météo pour les prochains jours. Chaque recherche passée sera stockée de votre côté et chaque fois que vous rechargerez la page, vous verrez toujours vos recherches précédentes avec les différentes prévisions toujours affichées sur votre magnifique page web. Pour la nettoyer, il vous suffit de cliquer sur le magnifique bouton en bas de la page."
@@ -105,7 +105,7 @@
         "deadline": "20/12/2023",
         "tech": ["HTML, SASS, React, Vite.JS"],
         "git": "https://github.com/Robpiot/COGIP-GP3",
-        "deploy": "https://6582c6477f821e007a1560e8--eloquent-youtiao-302ec7.netlify.app/",
+        "deploy": "https://cogip-gp3.netlify.app/",
         "overview": {
             "en": "The project aims to streamline the management of financial and contact data, providing a convenient and efficient solution for accounting tasks. The user interface is intuitive, allowing users to easily navigate through different sections, view detailed information, and perform necessary administrative actions.",
             "fr": "Le projet vise à rationaliser la gestion des données financières et de contact, en fournissant une solution pratique et efficace pour les tâches comptables. L'interface utilisateur est intuitive, permettant aux utilisateurs de naviguer facilement à travers différentes sections, de visualiser des informations détaillées et d'effectuer les actions administratives nécessaires."
