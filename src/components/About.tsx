@@ -36,16 +36,16 @@ export function About({ darkMode }: darkModeProps) {
                     {t('work_title')}
                 </h2> 
                 {workData.map((job: WorkData) =>
-                    <div key={job.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8`}>
-                        <div className="flex flex-row justify-between">
+                    <div key={job.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8 flex flex-col gap-4`}>
+                        <div className="flex flex-col items-start gap-0 lg:gap-0 lg:flex-row lg:justify-between">
                             <h4 className={`text-2xl lg:text-3xl ${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed pb-2`}>
                                 {job.title[language]}
                             </h4>
-                            <h5 className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-2 pl-5 pr-5 pb-7">
+                            <h5 className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-3 lg:pt-2 pl-5 pr-5 pb-7">
                                 {job.time[language]}
                             </h5>
                         </div>
-                        <div className="flex flex-row justify-between">
+                        <div className="flex flex-col items-start gap-4 lg:gap-0 lg:flex-row justify-between">
                             <div className="flex flex-row items-center justify-center gap-2">
                                 <FontAwesomeIcon icon={faBuilding} style={{color: "#9ca3af"}} />
                                 <h5 className="text-gray-400 text-xs lg:text-sm">
@@ -72,16 +72,16 @@ export function About({ darkMode }: darkModeProps) {
                     {t('education_title')}
                 </h2>
                 {educationData.map((education: EducationData) =>
-                    <div key={education.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8`}>
-                        <div className="flex flex-row justify-between">
+                    <div key={education.title[language]} className={`${darkMode ? 'border-gray-700' : 'border-gray-200'} border-b-4 py-8 flex flex-col gap-4`}>
+                        <div className="flex flex-col items-start gap-0 lg:gap-0 lg:flex-row lg:justify-between">
                             <h4 className={`text-2xl lg:text-3xl ${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed pb-2`}>
                                 {education.title[language]}
                             </h4>
-                            <h5 className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-2 pl-5 pr-5 pb-7">
+                            <h5 className="bg-green-200 text-green-600 font-bold text-xs lg:text-sm h-8 rounded-full pt-3 lg:pt-2 pl-5 pr-5 pb-7">
                                 {education.time[language]}
                             </h5>
                         </div>
-                        <div className="flex flex-row justify-between">
+                        <div className="flex flex-col items-start gap-4 lg:gap-0 lg:flex-row justify-between">
                             <div className="flex flex-row items-center justify-center gap-2">
                                 <FontAwesomeIcon icon={faGraduationCap} style={{color: "#9ca3af"}} />
                                 <h5 className="text-gray-400 text-xs lg:text-sm">
