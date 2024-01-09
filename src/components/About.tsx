@@ -27,7 +27,7 @@ export function About({ darkMode }: darkModeProps) {
                 <h2 className={`${darkMode ? 'text-gray-300' : 'text-gray-800'} py-2 my-2 text-4xl lg:text-6xl font-bold leading-relaxed pb-2`}>
                     {t('about_title')}
                 </h2>
-                <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-2xl lg:text-3xl text-justif`}>
+                <h3 className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-xl sm:text-2xl lg:text-3xl text-justify`}>
                     {t('about_text')}
                 </h3>
             </div>
