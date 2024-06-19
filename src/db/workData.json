@@ -1,66 +1,82 @@
 [
-    {
-      "title": {
-        "en": "Junior web Developer",
-        "fr": "Junior web Developer"
-      },
-      "time": {
-        "en": "Full Time",
-        "fr": "Temps plein"
-      },
-      "place": "BeCode",
-      "location": "Charleroi",
-      "date": {
-        "en": "Aug 2023 - March 2024",
-        "fr": "Août 2023 - Mars 2024"
-      }
+  {
+    "title": {
+      "en": "Internship - Junior web Developer",
+      "fr": "Stage - Junior web Developer"
     },
-    {
-      "title": {
-        "en": "Worker",
-        "fr": "Ouvrière"
-      },
-      "time": {
-        "en": "Full Time",
-        "fr": "Temps plein"
-      },
-      "place": "Schneider Electric",
-      "location": "Uccles",
-      "date": {
-        "en": "Sep 2022 - Aug 2023",
-        "fr": "Sept 2022 - Août 2023"
-      }
+    "time": {
+      "en": "Full Time",
+      "fr": "Temps plein"
     },
-    {
-      "title": {
-        "en": "Student worker",
-        "fr": "Etudiante ouvrière"
-      },
-      "time": {
-        "en": "Holidays",
-        "fr": "Vacances scolaires"
-      },
-      "place": "Schneider Electric",
-      "location": "Uccles",
-      "date": {
-        "en": "Jully 2013 - Aug 2023",
-        "fr": "Juillet 2013 - Août 2023"
-      }
-    },
-    {
-      "title": {
-        "en": "Student cashier",
-        "fr": "Etudiante caissière"
-      },
-      "time": {
-        "en": "Weekends",
-        "fr": "Weekends"
-      },
-      "place": "Carrefour Market",
-      "location": "Saint-Ghislain",
-      "date": {
-        "en": "Jully 2013 - Aug 2023",
-        "fr": "Juillet 2013 - Août 2023"
-      }
+    "place": "Alpaga Agency",
+    "location": "Mons",
+    "date": {
+      "en": "March 2024 - June 2024",
+      "fr": "Mars 2024 - Juin 2024"
     }
+  },
+  {
+    "title": {
+      "en": "Course - Junior web Developer",
+      "fr": "Formation - Junior web Developer"
+    },
+    "time": {
+      "en": "Full Time",
+      "fr": "Temps plein"
+    },
+    "place": "BeCode",
+    "location": "Charleroi",
+    "date": {
+      "en": "Aug 2023 - March 2024",
+      "fr": "Août 2023 - Mars 2024"
+    }
+  },
+  {
+    "title": {
+      "en": "Worker",
+      "fr": "Ouvrière"
+    },
+    "time": {
+      "en": "Full Time",
+      "fr": "Temps plein"
+    },
+    "place": "Schneider Electric",
+    "location": "Uccles",
+    "date": {
+      "en": "Sep 2022 - Aug 2023",
+      "fr": "Sept 2022 - Août 2023"
+    }
+  },
+  {
+    "title": {
+      "en": "Student worker",
+      "fr": "Etudiante ouvrière"
+    },
+    "time": {
+      "en": "Holidays",
+      "fr": "Vacances scolaires"
+    },
+    "place": "Schneider Electric",
+    "location": "Uccles",
+    "date": {
+      "en": "Jully 2013 - Aug 2023",
+      "fr": "Juillet 2013 - Août 2023"
+    }
+  },
+  {
+    "title": {
+      "en": "Student cashier",
+      "fr": "Etudiante caissière"
+    },
+    "time": {
+      "en": "Weekends",
+      "fr": "Weekends"
+    },
+    "place": "Carrefour Market",
+    "location": "Saint-Ghislain",
+    "date": {
+      "en": "Jully 2013 - Aug 2023",
+      "fr": "Juillet 2013 - Août 2023"
+    }
+  }
 ]

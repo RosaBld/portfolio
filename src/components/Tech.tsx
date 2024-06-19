@@ -133,6 +133,31 @@ export function Tech({ darkMode }: darkModeProps) {
                             <path className={darkMode ? 'fill-current text-white' : 'fill-current text-black'} fillRule="evenodd" clipRule="evenodd" d="M44 0C19.69 0 0 19.69 0 44C0 63.47 12.595 79.915 30.085 85.745C32.285 86.13 33.11 84.81 33.11 83.655C33.11 82.61 33.055 79.145 33.055 75.46C22 77.495 19.14 72.765 18.26 70.29C17.765 69.025 15.62 65.12 13.75 64.075C12.21 63.25 10.01 61.215 13.695 61.16C17.16 61.105 19.635 64.35 20.46 65.67C24.42 72.325 30.745 70.455 33.275 69.3C33.66 66.44 34.815 64.515 36.08 63.415C26.29 62.315 16.06 58.52 16.06 41.69C16.06 36.905 17.765 32.945 20.57 29.865C20.13 28.765 18.59 24.255 21.01 18.205C21.01 18.205 24.695 17.05 33.11 22.715C36.63 21.725 40.37 21.23 44.11 21.23C47.85 21.23 51.59 21.725 55.11 22.715C63.525 16.995 67.21 18.205 67.21 18.205C69.63 24.255 68.09 28.765 67.65 29.865C70.455 32.945 72.16 36.85 72.16 41.69C72.16 58.575 61.875 62.315 52.085 63.415C53.68 64.79 55.055 67.43 55.055 71.555C55.055 77.44 55 82.17 55 83.655C55 84.81 55.825 86.185 58.025 85.745C66.7597 82.796 74.3497 77.1822 79.7268 69.6937C85.1039 62.2052 87.9974 53.219 88 44C88 19.69 68.31 0 44 0Z" fill="black"/>
                         </svg> 
                     </div>
+
+                    <div className="has-tooltip">
+                        <span className={`tooltip rounded shadow-lg p-1 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} -mt-8 `}>Wamp Server</span>
+                        <img src="./icons/wamp.png" alt="wampServer" className="w-32 object-cover p-4" /> 
+                    </div>
+
+                    <div className="has-tooltip">
+                        <span className={`tooltip rounded shadow-lg p-1 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} -mt-8 `}>Composer</span>
+                        <img src="./icons/composer.png" alt="Composer" className="w-28 object-cover p-4" /> 
+                    </div>
+
+                    <div className="has-tooltip">
+                        <span className={`tooltip rounded shadow-lg p-1 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} -mt-8 `}>WordPress</span>
+                        <img src="./icons/WordPress.png" alt="WordPress" className="w-28 object-cover p-4" />
+                    </div>
+
+                    <div className="has-tooltip">
+                        <span className={`tooltip rounded shadow-lg p-1 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} -mt-8 `}>Twig</span>
+                        <img src="./icons/twig.png" alt="twig" className="w-24 object-cover p-4" /> 
+                    </div>
+
+                    <div className="has-tooltip">
+                        <span className={`tooltip rounded shadow-lg p-1 ${darkMode ? 'text-gray-300' : 'text-gray-800'} ${darkMode ? 'bg-slate-900' : 'bg-slate-100'} -mt-8 `}>Slim</span>
+                        <img src="./icons/slim.jpg" alt="slimPHP" className="w-28 object-cover p-4" /> 
+                    </div>
                 </div>
             </div>
         </div>

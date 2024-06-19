@@ -134,5 +134,71 @@
             "fr": "Ce projet est un projet solo pour approfondir mes connaissances en React et Vite.JS, mais aussi pour apprendre Typescript et Tailwind. L'objectif de ce projet était de pouvoir créer, entièrement seul, un projet secondaire, pour avoir des idées et les rassembler. C'était aussi une excellente façon de montrer certaines des compétences que j'ai acquises pendant mes cours et de les rassembler pour un futur stage."
         },
         "screens": ["/screen/cards/portfolio/portfolio.png", "/screen/cards/portfolio/portfolio2.png", "/screen/cards/portfolio/portfolio3.png", "/screen/cards/portfolio/portfolio4.png", "/screen/cards/portfolio/portfolio5.png"] 
+    },
+    {
+        "id": 7,
+        "slug": "plugin",  
+        "image": "/screen/home/plugin.png",
+        "title": {
+            "en": "Plugin Wordpress",
+            "fr": "Plugin Wordpress"
+        },
+        "preview": {
+            "en": "A Cookie Consent Plugin for Wordpress",
+            "fr": "Un plugin Cookie Consent pour WordPress"
+        },
+        "deadline": "17/05/2024",
+        "tech": ["JavaScript, PHP, TypeScript, SCSS"],
+        "git": "https://github.com/RosaBld/cookie-consent-plugin",
+        "deploy": "",
+        "overview": {
+            "en": "This project was created during my internship at Alpaga Agency. The goal was to create a plugin for WordPress that allows the user to change the content and the style of their plugin.",
+            "fr": "Ce projet a été réalisé lors de mon stage à l'agence Alpaga. L'objectif était de créer un plugin pour WordPress qui permet à l'utilisateur de changer le contenu et le style de son plugin."
+        },
+        "screens": ["/screen/home/plugin.png"] 
+    },
+    {
+        "id": 8,
+        "slug": "heritage",  
+        "image": "/screen/home/heritage.png",
+        "title": {
+            "en": "Heritage",
+            "fr": "Heritage"
+        },
+        "preview": {
+            "en": "A web page for a estate agency",
+            "fr": "Une page web pour une agence immobilière"
+        },
+        "deadline": "12/04/2024",
+        "tech": ["JavaScript, PHP, SCSS, TWIG, TypeScript"],
+        "git": "https://github.com/RosaBld/heritage",
+        "deploy": "https://heritage.immo/",
+        "overview": {
+            "en": "This project is a web page created during my internship at Alpaga Agency and was needed for an estate agency. They wanted a new web page to show their future customer what new was coming in the city of Brussels. It was created with WordPress and PHP mainly",
+            "fr": "Ce projet est une page web créée pendant mon stage chez Alpaga Agency et était nécessaire pour une agence immobilière. Ils voulaient une nouvelle page web pour montrer à leurs futurs clients ce qu'il y avait de nouveau dans la ville de Bruxelles. Le projet a été réalisé avec WordPress et PHP principalement"
+        },
+        "screens": ["/screen/cards/heritage/heritage.png", "/screen/cards/heritage/heritage2.png", "/screen/cards/heritage/heritage3.png", "/screen/cards/heritage/heritage4.png", "/screen/cards/heritage/heritage5.png", "/screen/cards/heritage/heritage6.png", "/screen/cards/heritage/heritage7.png", "/screen/cards/heritage/heritage8.png"] 
+    },
+    {
+        "id": 9,
+        "slug": "chopping",  
+        "image": "/screen/home/Chopping.png",
+        "title": {
+            "en": "Chopping",
+            "fr": "Chopping"
+        },
+        "preview": {
+            "en": "A web App to share a drink with friends",
+            "fr": "Une application web pour gérer les boissons entre amis"
+        },
+        "deadline": "14/06/2024",
+        "tech": ["JavaScript, SCSS, HTML"],
+        "git": "https://github.com/RosaBld/Chopping",
+        "deploy": "http://chopping.be/",
+        "overview": {
+            "en": "This project was created for Alpaga Agency. My internship supervisor, who is also one of the creator of the Agnecy wanted an app that allows the users to keep an eye of the different tabs during a night out. This is a pure front-end project.",
+            "fr": "Ce projet a été créé pour l'agence Alpaga. Mon maître de stage, qui est également l'un des créateurs d'Agnecy, souhaitait une application qui permette aux utilisateurs de garder un œil sur les différents onglets lors d'une soirée. Il s'agit d'un projet purement front-end."
+        },
+        "screens": ["/screen/cards/Chopping/Chopping.png", "/screen/cards/Chopping/Chopping2.png", "/screen/cards/Chopping/Chopping3.png", "/screen/cards/Chopping/Chopping4.png", "/screen/cards/Chopping/Chopping5.png"] 
     }
 ]
